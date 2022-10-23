@@ -1,0 +1,129 @@
+* {
+  font-size: 14px;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+.top {
+  width: 100%;
+  margin: 0px auto;
+}
+.top .header {
+  width: 100%;
+  height: auto;
+  background-color: rgb(83, 117, 145);
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-bottom: 0;
+}
+
+.header img {
+  width: 150px;
+  height: 140px;
+  border-radius: 70px;
+  float: right;
+  position: absolute;
+  top: 30px;
+  right: 100px;
+  border: 3px solid white;
+  box-shadow: 3px 2px 3px black;
+}
+.img-text {
+  color: rgb(17, 17, 78);
+  margin: 30px;
+  padding: 30px;
+  align-items: center;
+  float: left;
+}
+.content {
+  display: flex;
+}
+
+.profile {
+  width: 100%;
+  padding-left: 30px;
+}
+
+h1 {
+  font-size: 40px;
+  font-family: cursive;
+  margin: 10px auto;
+}
+
+h3 {
+  font-size: 25px;
+  margin: 10px auto;
+  font-style: italic;
+  font-family: monospace;
+}
+.content h4 {
+  padding: 10px;
+  font-size: 15px;
+  font-weight: 600px;
+}
+.left-area {
+  line-height: 25px;
+  padding: 30px 20px 40px 70px;
+  width: 48%;
+  background-color: rgb(211, 219, 236);
+  position: relative;
+}
+
+.right-area {
+  padding: 30px 100px 50px 40px;
+  width: 52%;
+  background-color: #f5f5f5;
+  text-align: justify;
+  word-break: break-all;
+}
+@media screen and (min-width: 600px) {
+  .right-area {
+    padding: 30px 20px 0px 20px;
+    width: 51%;
+    color: rgb(17, 17, 78);
+    font-size: 15px;
+    line-height: 25px;
+  }
+  .left-area {
+    padding: 30px 30px 20px 50px;
+    width: 49%;
+    font-size: 15px;
+  }
+  h1,
+  h3 {
+    font-size: 25px;
+    text-align: center;
+  }
+  .header img {
+    display: block;
+    position: absolute;
+    top: 30px;
+    right: 5%;
+  }
+}
+@media screen and (max-width: 600px) {
+  .right-area {
+    padding: 0 12px 5px 0;
+    width: 51%;
+    color: rgb(17, 17, 78);
+    font-size: 10px;
+    line-height: 17px;
+  }
+  .left-area {
+    padding: 0 10px 0 13px;
+    width: 49%;
+    color: brown;
+    font-size: 14px;
+  }
+  h1,
+  h3 {
+    font-size: 25px;
+    text-align: center;
+  }
+  .header img {
+    display: none;
+  }
+}
