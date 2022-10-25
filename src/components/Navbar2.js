@@ -10,7 +10,7 @@ import {
   Flex,
 } from "@chakra-ui/react";
 import audio from "../components/audio.mp3";
-import { FaSoundcloud } from "react-icons/fa";
+//import { FaSoundcloud } from "react-icons/fa";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { MdClose } from "react-icons/md";
 import "../index.css";
@@ -50,7 +50,7 @@ export const Navbar2 = () => {
   </Text>*/}
       <nav className="navbar">
         <HStack fontWeight={"semibold"} className="logo">
-          <FaSoundcloud size={["2.5rem"]} color={"#2A9D8F"} />
+          {/*<FaSoundcloud size={["2.5rem"]} color={"#2A9D8F"} />*/}
           <Text color={"#FFFFFF"} fontSize={["1rem", "1rem", "1.2rem"]}>
             Sound
           </Text>
