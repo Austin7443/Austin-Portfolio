@@ -41,7 +41,7 @@ export const Navbar2 = () => {
     } else {
       media.pause();
     }
-  };
+  }
 
   return (
     <>
