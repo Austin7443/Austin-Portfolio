@@ -155,7 +155,6 @@
 .text-html {
   position: relative;
   border-radius: 50%;
-
   animation: animate2 5s linear infinite;
 }
 

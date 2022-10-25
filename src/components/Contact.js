@@ -1,7 +1,7 @@
 import { Box, Button, Flex, Stack, Text } from "@chakra-ui/react";
 import React from "react";
 import { BsGithub } from "react-icons/bs";
-import { FaWhatsapp } from "react-icons/fa";
+//import { FaWhatsapp } from "react-icons/fa";
 import {
   AiOutlineLinkedin,
   AiOutlineFacebook,
@@ -54,11 +54,11 @@ export const Contact = ({ color, marginLeft }) => {
             />
           </a>
           <a href="https://wa.me/2347065861622">
-            <FaWhatsapp
+           {/*} <FaWhatsapp
               size={"2rem"}
               style={{ paddingBottom: "12px" }}
               id="shake"
-            />
+  />*/}
           </a>
           <Box
             borderLeft={`2px solid ${secondary}`}
@@ -157,7 +157,7 @@ export const Contact = ({ color, marginLeft }) => {
                 <AiOutlineInstagram size={"1.5rem"} />
               </a>
               <a href="https://wa.me/2347065861622">
-                <FaWhatsapp size={"1.5rem"} />
+                {/*<FaWhatsapp size={"1.5rem"} />*/}
               </a>
             </Flex>
           </Box>
