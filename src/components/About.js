@@ -1,5 +1,5 @@
 import React from "react";
-import { Box, Flex, Image, Text } from "@chakra-ui/react";
+import { Box, Flex, HStack, Image, Text } from "@chakra-ui/react";
 import profile from "./images/dp.jpeg";
 
 export const About = ({ color, marginLeft }) => {
@@ -25,8 +25,19 @@ export const About = ({ color, marginLeft }) => {
           fontWeight={"bold"}
           color={secondary || "#FFFFFF"}
           textAlign={["center", "center", "start"]}
+          letterSpacing={-5}
         >
-          About me
+          <HStack>
+            <span id="shake">A</span>
+            <span id="shake">b</span>
+            <span id="shake">o</span>
+            <span id="shake">u</span>
+            <span id="shake" style={{ paddingRight: "20px" }}>
+              t
+            </span>
+            <span id="shake">m</span>
+            <span id="shake">e</span>
+          </HStack>
         </Text>
         <Text fontStyle="italic" fontSize={"1rem"} color={tertiary}>
           {"<h2>"}
@@ -56,23 +67,25 @@ export const About = ({ color, marginLeft }) => {
         >
           I'm Austin Onueze and I'm a Frontend web developer from Lagos,
           Nigeria. I have had various training and experience with working with
-          other developers which has very much motivated me to keep learning
-          and pushing to get to the peak of my career as a web developer.
+          other developers which has very much motivated me to keep learning and
+          pushing to get to the peak of my career as a web developer.
           <br />
-          I currently work as a frontend developer with Zilight innovation labs, where i work
-          in close collaboration with both team mates and members of other department like the product 
-          design team, backend team and marketing team to achieve user friendly products.<br />
-          I specialize in standards-based HTML, CSS, Javascript and React; with various packages and frameworks 
-          to develop products to be search engine
-          friendly, using the latest development principles and techniques. To
-          find out more about me and what i can do, check out my contact.
+          I currently work as a frontend developer with Zilight innovation labs,
+          where i work in close collaboration with both team mates and members
+          of other department like the product design team, backend team and
+          marketing team to achieve user friendly products.
+          <br />I specialize in standards-based HTML, CSS, Javascript and React;
+          with various packages and frameworks to develop products to be search
+          engine friendly, using the latest development principles and
+          techniques. To find out more about me and what i can do, check out my
+          contact and reach out.
         </Text>
         <Text fontStyle="italic" fontSize={"1rem"} color={tertiary}>
           {"</p>"}
         </Text>
       </Box>
       <Image
-      id="dp"
+        id="dp"
         src={profile}
         alt="profile image"
         maxW={"400px"}

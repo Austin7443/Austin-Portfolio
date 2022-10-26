@@ -17,7 +17,7 @@ import "../index.css";
 
 const media = new Audio(audio);
 media.controls = true;
-//media.autoplay = true
+media.loop = true
 
 console.log(media);
 
@@ -56,7 +56,11 @@ export const Navbar2 = () => {
           </Text>
 
           <Box color={"#2A9D8F"} fontSize={"1.5rem"} cursor={"pointer"}>
-            <Switch onChange={playAudio} isChecked={toggle} />
+            <Switch
+              onChange={playAudio}
+              isChecked={toggle}
+              colorScheme="teal"
+            />
           </Box>
         </HStack>
         <UnorderedList
@@ -103,7 +107,8 @@ export const Navbar2 = () => {
               //mb={["-80px", "-80px", "-80px", "0px"]}
             >
               <a href="https://austin-cv.netlify.app/" className="resume">
-                <ListItem
+                <Button
+                  id="button"
                   fontSize={["1.4rem", "1.4rem", "1.4rem", "1.2rem"]}
                   fontWeight={["semibold", "semibold", "light"]}
                   color={["#000", "#000", "#2A9D8F", "#2A9D8F"]}
@@ -115,7 +120,7 @@ export const Navbar2 = () => {
                   //className="ani"
                 >
                   Resume
-                </ListItem>
+                </Button>
               </a>
             </Box>
           </Flex>
@@ -124,6 +129,15 @@ export const Navbar2 = () => {
           {mobile ? <MdClose /> : <GiHamburgerMenu />}
         </Button>
       </nav>
+      <Text
+        fontStyle="italic"
+        fontSize={"1rem"}
+        color={"#878787"}
+        position={"absolute"}
+        zIndex={30}
+      >
+        {"<html>"}
+      </Text>
     </>
   );
 };

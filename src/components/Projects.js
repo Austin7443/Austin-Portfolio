@@ -154,10 +154,18 @@ export const Projects = ({ color, marginLeft }) => {
               >
                 These are some of the technologies i most frequently use to
                 build amazing things, I work with these on daily basis and have
-                a good understanding about them. I also have basic knowledge of
-                MongoDB, Express and Node.js. I also work with various packages,
-                CSS libraries and team management tools which are listed in my
-                CV.
+                a good understanding about them. I also work with various
+                packages, CSS libraries and team management tools which are
+                listed in{" "}
+                <Text
+                  as="span"
+                  color={"#2A9D8F"}
+                  cursor="pointer"
+                  onClick={() => window.location.href="https://austin-cv.netlify.app/"}
+                >
+                  my CV
+                </Text>
+                . I also have basic knowledge of MongoDB, Express and Node.js.
               </Text>
               <Text
                 fontSize={"30rem"}

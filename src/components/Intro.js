@@ -5,19 +5,24 @@ import { Span } from "./Span";
 export const Intro = ({ marginLeft, color }) => {
   const { secondary } = color;
   return (
-    <Box position={"relative"} className="ani">
-      <Box position={"absolute"} zIndex={""} background={"transparent"}>
+    <Box position={"relative"}>
+      <Box position={"absolute"} zIndex={10} background={"transparent"}>
         <Span />
       </Box>
       <Box position={"relative"}>
-        <Text fontStyle="italic" fontSize={"1rem"} color={"#878787"}>
+        <Text
+          fontStyle="italic"
+          fontSize={"1rem"}
+          color={"#878787"}
+          pt={["70px", "70px", "50px"]}
+        >
           {"<body>"}
         </Text>
         <Text
           fontStyle="italic"
           fontSize={"1rem"}
           color={"#878787"}
-          pt={["70px", "70px", "0"]}
+          //pt={["70px", "70px", "0"]}
         >
           {"<h1>"}
         </Text>
@@ -30,7 +35,7 @@ export const Intro = ({ marginLeft, color }) => {
           color={"#FBFBFB" || "#FFFFFF"}
           py={"5px"}
         >
-          <Box zIndex={2}>
+          <Box zIndex={4}>
             <HStack>
               <span id="shake">H</span>
               <span id="shake">i,</span>
@@ -81,7 +86,6 @@ export const Intro = ({ marginLeft, color }) => {
           color={"#808080"}
           ml={marginLeft}
           className="hi"
-          
         >
           Frontend Developer
         </Text>

@@ -1,4 +1,4 @@
-import { Box, Button, Flex, Stack, Text } from "@chakra-ui/react";
+import { Box, Button, Flex, HStack, Stack, Text } from "@chakra-ui/react";
 import React from "react";
 import { BsGithub } from "react-icons/bs";
 import { FaWhatsapp } from "react-icons/fa";
@@ -58,7 +58,7 @@ export const Contact = ({ color, marginLeft }) => {
               size={"2rem"}
               style={{ paddingBottom: "12px" }}
               id="shake"
-  />
+            />
           </a>
           <Box
             borderLeft={`2px solid ${secondary}`}
@@ -72,14 +72,29 @@ export const Contact = ({ color, marginLeft }) => {
           </Text>
           <Text
             lineHeight={0.8}
-            // ml={marginLeft}
+            //ml={marginLeft}
             fontSize={["3rem", "3rem", "6rem"]}
             fontWeight={"bold"}
             color={secondary || "#FFFFFF"}
             textAlign={"center"}
             id="contact"
           >
-            Get in Touch
+            <HStack letterSpacing={-7} justifyContent={"center"}>
+              <span id="shake">G</span>
+              <span id="shake">e</span>
+              <span id="shake" style={{ paddingRight: "15px" }}>
+                t
+              </span>
+              <span id="shake">i</span>
+              <span id="shake" style={{ paddingRight: "15px" }}>
+                n
+              </span>
+              <span id="shake">T</span>
+              <span id="shake">o</span>
+              <span id="shake">u</span>
+              <span id="shake">c</span>
+              <span id="shake">h</span>
+            </HStack>
           </Text>
           <Text fontStyle="italic" fontSize={"1rem"} color={tertiary}>
             {"<h2>"}
@@ -127,7 +142,7 @@ export const Contact = ({ color, marginLeft }) => {
             </Box>
           </Flex>
           <Text fontStyle="italic" fontSize={"1rem"} color={tertiary}>
-            {"<div>"}
+            {"</div>"}
           </Text>
 
           <Box
@@ -157,7 +172,7 @@ export const Contact = ({ color, marginLeft }) => {
                 <AiOutlineInstagram size={"1.5rem"} />
               </a>
               <a href="https://wa.me/2347065861622">
-              <FaWhatsapp size={"1.5rem"} />
+                <FaWhatsapp size={"1.5rem"} />
               </a>
             </Flex>
           </Box>
@@ -177,12 +192,7 @@ export const Contact = ({ color, marginLeft }) => {
         <Box display={["none", "none", "block"]}>
           <Stack spacing={36}>
             <a href="mailto:austin7443@gmail.com">
-              <Text
-                id="mail"
-                fontSize={"1.5rem"}
-                mb={["20px"]}
-                mr={["-20px"]}
-              >
+              <Text id="mail" fontSize={"1.5rem"} mb={["20px"]} mr={["-20px"]}>
                 austin7443@gmail.com
               </Text>
               <Box borderRight={`2px solid ${secondary}`} h={"200px"}></Box>

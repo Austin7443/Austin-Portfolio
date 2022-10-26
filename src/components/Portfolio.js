@@ -1,13 +1,12 @@
 import React from "react";
 import { Box, Button, Flex, Grid, HStack, Image, Text } from "@chakra-ui/react";
-// import  img1 from "./images/img1.jpg"
-//import  img2 from "./images/img22.jfif"
+import  img1 from "./images/img22.png"
+import img2 from "./images/img33.png"
 import img3 from "./images/img00.png";
-import img4 from "./images/img44.jfif";
-import img5 from "./images/img55.jfif";
+import img4 from "./images/img66.jpeg";
+import img5 from "./images/img55.png";
 import img6 from "./images/img77.png";
-import { FiGithub } from "react-icons/fi";
-import { FiExternalLink } from "react-icons/fi";
+import { FiGithub, FiExternalLink } from "react-icons/fi";
 import { useNavigate } from "react-router-dom";
 
 export const Portfolio = ({ color, marginLeft }) => {
@@ -45,8 +44,24 @@ export const Portfolio = ({ color, marginLeft }) => {
               fontWeight={"bold"}
               color={secondary || "#FFFFFF"}
               textAlign={["center", "center", "start"]}
+              letterSpacing={-5}
+              //id="shake"
             >
-              My Portfolio
+              <HStack>
+                <span id="shake">M</span>
+                <span id="shake" style={{ paddingRight: "20px" }}>
+                  y
+                </span>
+                <span id="shake">P</span>
+                <span id="shake">o</span>
+                <span id="shake">r</span>
+                <span id="shake">t</span>
+                <span id="shake">f</span>
+                <span id="shake">o</span>
+                <span id="shake">l</span>
+                <span id="shake">i</span>
+                <span id="shake">o</span>
+              </HStack>
             </Text>
             <Text fontStyle="italic" fontSize={"1rem"} color={tertiary}>
               {"<h2>"}
@@ -182,9 +197,9 @@ export const data = [
     link: "https://myestate.app/",
   },
   {
-    images: img4,
+    images: img6,
     alt: "Project Image",
-    link: "/",
+    link: "https://www.wehaul247.com/",
   },
   {
     images: img5,
@@ -192,18 +207,30 @@ export const data = [
     link: "/",
   },
   {
+    images: img2,
+    alt: "Project Image",
+    link: "https://v1-patient-howbodi.netlify.app/",
+  },
+
+  {
+    images: img1,
+    alt: "Project Image",
+    link: "https://water-management.netlify.app/",
+  },
+  // {
+  //   images: img5,
+  //   alt: "Project Image",
+  //   link: "/",
+  // },
+
+  // {
+  //   images: img4,
+  //   alt: "Project Image",
+  //   link: "/",
+  // },
+  {
     images: img4,
     alt: "Project Image",
     link: "/",
-  },
-  {
-    images: img3,
-    alt: "Project Image",
-    link: "/",
-  },
-  {
-    images: img6,
-    alt: "Project Image",
-    link: "https://www.wehaul247.com/",
   },
 ];
