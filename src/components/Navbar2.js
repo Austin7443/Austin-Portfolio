@@ -19,23 +19,12 @@ const media = new Audio(audio);
 media.controls = true;
 media.loop = true
 
-console.log(media);
-
 export const Navbar2 = () => {
   const [toggle, setToggle] = useState(false);
   const [mobile, setMobile] = useState(false);
 
-  // const onload = () => {
-  //   media.play();
-  // };
-
-  // window.addEventListener("load", function () {
-  //   onload();
-  // });
-
   const playAudio = () => {
     setToggle(!toggle);
-    // console.log(media, "mediaaaa");
     if (media.paused) {
       media.play();
     } else {
@@ -45,9 +34,6 @@ export const Navbar2 = () => {
 
   return (
     <>
-      {/*<Text fontStyle="italic" fontSize={"1rem"} color={"#878787"} bg={"#000"}>
-        {"<html>"}
-  </Text>*/}
       <nav className="navbar">
         <HStack fontWeight={"semibold"} className="logo">
           <FaSoundcloud size={["2.5rem"]} color={"#2A9D8F"} />
@@ -60,12 +46,12 @@ export const Navbar2 = () => {
               onChange={playAudio}
               isChecked={toggle}
               colorScheme="teal"
+              aria-label="Sound switch"
             />
           </Box>
         </HStack>
         <UnorderedList
           alignItems={"center"}
-          //justifyContent={"center"}
           className={mobile ? "nav-links-mobile" : "nav-links"}
           right={0}
           listStyleType={"none"}
@@ -73,7 +59,6 @@ export const Navbar2 = () => {
           fontSize={"1.4rem"}
           overflowX={"hidden"}
           zIndex={2}
-          //w={"100%"}
         >
           <Flex
             w={["100%", "100%", "75%", "55%"]}
@@ -104,7 +89,6 @@ export const Navbar2 = () => {
             </Box>
             <Box
               mt={["-20px", "-20px", "0px", "0px"]}
-              //mb={["-80px", "-80px", "-80px", "0px"]}
             >
               <a href="https://austin-cv.netlify.app/" className="resume">
                 <Button
@@ -117,7 +101,6 @@ export const Navbar2 = () => {
                   bg={"transparent"}
                   size={"lg"}
                   p={["0px", "0px", "5px 10px", "10px 20px"]}
-                  //className="ani"
                 >
                   Resume
                 </Button>
@@ -125,7 +108,11 @@ export const Navbar2 = () => {
             </Box>
           </Flex>
         </UnorderedList>
-        <Button id="mobile-menu-icon" onClick={() => setMobile(!mobile)}>
+        <Button
+          id="mobile-menu-icon"
+          onClick={() => setMobile(!mobile)}
+          aria-label="Menu-icon"
+        >
           {mobile ? <MdClose /> : <GiHamburgerMenu />}
         </Button>
       </nav>

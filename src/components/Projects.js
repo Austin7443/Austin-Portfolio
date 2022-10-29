@@ -13,7 +13,7 @@ import java from "./images/308441_front-end_javascript_js_long shadow_markup lan
 import profile from "./images/profile.jpg";
 import { Link } from "react-router-dom";
 
-export const Projects = ({ color, marginLeft }) => {
+export const Projects = ({ color }) => {
   const { secondary, tertiary } = color;
 
   return (
@@ -39,7 +39,6 @@ export const Projects = ({ color, marginLeft }) => {
           h={["350px", "350px", "400px", "450px"]}
           bg={"#2A9D8F"}
           rounded={"lg"}
-          //_hover={{ bg: "#000" }}
         >
           <Flex
             align={"center"}
@@ -59,65 +58,72 @@ export const Projects = ({ color, marginLeft }) => {
               <Image
                 src={html}
                 alt="HTML icon"
-                className="html text-html"
                 h={["70px", "70px", "100px"]}
                 w={["70px", "70px", "100px"]}
                 left={["0%", "0%", "-8%"]}
                 top={["10%", "10%", "-20%"]}
+                loading="lazy"
+                id="tools"
               />
               <Image
                 src={css}
                 alt="css icon"
-                className="css text-css"
                 h={["70px", "70px", "100px"]}
                 w={["70px", "70px", "100px"]}
                 left={["-18", "-8%", "-38%"]}
                 top={["18%", "18%", "20%"]}
+                loading="lazy"
+                id="tools"
               />
               <Image
                 src={java}
                 alt="javascript icon"
-                className="css text-java"
                 h={["70px", "70px", "100px"]}
                 w={["70px", "70px", "100px"]}
                 left={["19%", "15%", "-40%"]}
                 top={["20%", "18%", "43%"]}
+                loading="lazy"
+                id="tools"
               />
               <Image
                 src={react}
                 alt="react icon"
-                className="css text-react"
                 h={["70px", "70px", "100px"]}
                 w={["70px", "70px", "100px"]}
                 left={["55%", "55%", "-35%"]}
                 top={["-10%", "-10%", "33%"]}
+                loading="lazy"
+                id="tools"
               />
               <Image
                 src={git}
                 alt="git icon"
-                className="css text-git"
                 h={["70px", "70px", "100px"]}
                 w={["70px", "70px", "100px"]}
                 left={["80%", "80%", "-58%"]}
                 top={["-70%", "-70%", "0%"]}
+                loading="lazy"
+                id="tools"
               />
               <Image
                 src={scss}
                 alt="scss icon"
-                className="css text-scss"
                 h={["70px", "70px", "100px"]}
                 w={["70px", "70px", "100px"]}
                 left={["35%", "35%", "-110%"]}
                 top={["-150%", "-150%", "-35%"]}
+                loading="lazy"
+                id="tools"
               />
               <Image
                 src={bootstrap}
                 alt="bootstrap icon"
-                className="css text-bootstrap"
                 h={["70px", "70px", "100px"]}
                 w={["70px", "70px", "100px"]}
                 left={["72%", "72%", "-180%"]}
                 top={["-160%", "-160%", "-42%"]}
+                loading="lazy"
+                id="tools"
               />
             </Flex>
             <Image
@@ -127,6 +133,7 @@ export const Projects = ({ color, marginLeft }) => {
               alt="Profile icon"
               className="profileImg"
               left={["0%", "0%", "0%", "-50%"]}
+              loading="lazy"
             />
           </Flex>
         </Flex>
@@ -161,7 +168,9 @@ export const Projects = ({ color, marginLeft }) => {
                   as="span"
                   color={"#2A9D8F"}
                   cursor="pointer"
-                  onClick={() => window.location.href="https://austin-cv.netlify.app/"}
+                  onClick={() =>
+                    (window.location.href = "https://austin-cv.netlify.app/")
+                  }
                 >
                   my CV
                 </Text>
@@ -175,7 +184,6 @@ export const Projects = ({ color, marginLeft }) => {
                 zIndex={-2}
                 top={"90%"}
                 left={["30%", "40%", "60%"]}
-                //letterSpacing={"-50px"}
                 opacity={"20%"}
               >
                 Hi

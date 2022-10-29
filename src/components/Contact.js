@@ -8,7 +8,7 @@ import {
   AiOutlineInstagram,
 } from "react-icons/ai";
 
-export const Contact = ({ color, marginLeft }) => {
+export const Contact = ({ color }) => {
   const { primary, secondary, tertiary } = color;
   return (
     <Box mt={"100px"} className="reveal" position={"relative"}>
@@ -45,7 +45,6 @@ export const Contact = ({ color, marginLeft }) => {
               id="shake"
             />
           </a>
-          {/*<BsTwitter size={"2rem"} style={{paddingBottom: "10px"}} />*/}
           <a href="https://www.instagram.com/invites/contact/?i=1rvtwu62lzrve&utm_content=9q811pa">
             <AiOutlineInstagram
               size={"2rem"}
@@ -72,7 +71,6 @@ export const Contact = ({ color, marginLeft }) => {
           </Text>
           <Text
             lineHeight={0.8}
-            //ml={marginLeft}
             fontSize={["3rem", "3rem", "6rem"]}
             fontWeight={"bold"}
             color={secondary || "#FFFFFF"}
@@ -106,17 +104,11 @@ export const Contact = ({ color, marginLeft }) => {
           <Flex justify={"center"}>
             <Box>
               <Box
-                //className="ani"
                 border={`5px solid ${secondary}`}
                 p={["20px", "20px", "50px"]}
                 textAlign={"center"}
               >
-                <Text
-                  maxW={"520px"}
-                  fontSize={"1.2rem"}
-                  color={primary}
-                  //ml={marginLeft}
-                >
+                <Text maxW={"520px"} fontSize={"1.2rem"} color={primary}>
                   You can reach out to me through any of my contact options, my
                   inbox is always open. Whether you have a question or just want
                   to say hi, I’ll try my best to get back to you!
@@ -124,13 +116,13 @@ export const Contact = ({ color, marginLeft }) => {
                 <Button
                   w={"200px"}
                   id="button"
+                  aria-label="Say Hello"
                   fontSize={"1.2rem"}
                   fontWeight={"light"}
                   color={secondary}
                   border={"2px solid #2A9D8F"}
                   borderRadius={"none"}
                   bg={"transparent"}
-                  //ml={marginLeft}
                   mt={"30px"}
                   size={"lg"}
                   textAlign={"center"}
@@ -167,7 +159,6 @@ export const Contact = ({ color, marginLeft }) => {
               <a href="https://www.facebook.com/austin.onueze">
                 <AiOutlineFacebook size={"1.5rem"} />
               </a>
-              {/*<BsTwitter size={"1.5rem"} />*/}
               <a href="https://www.instagram.com/invites/contact/?i=1rvtwu62lzrve&utm_content=9q811pa">
                 <AiOutlineInstagram size={"1.5rem"} />
               </a>
@@ -179,7 +170,6 @@ export const Contact = ({ color, marginLeft }) => {
           <Text
             fontSize={"1rem"}
             color={secondary}
-            //ml={marginLeft}
             textAlign={"center"}
             py={["15px", "15px", "0"]}
           >
@@ -192,7 +182,7 @@ export const Contact = ({ color, marginLeft }) => {
         <Box display={["none", "none", "block"]}>
           <Stack spacing={36}>
             <a href="mailto:austin7443@gmail.com">
-              <Text id="mail" fontSize={"1.5rem"} mb={["20px"]} mr={["-20px"]}>
+              <Text className="mail" fontSize={"1.5rem"} mb={["20px"]} mr={["-20px"]} id="shake">
                 austin7443@gmail.com
               </Text>
               <Box borderRight={`2px solid ${secondary}`} h={"200px"}></Box>

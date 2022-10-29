@@ -20,14 +20,13 @@ export const Home = () => {
       p={["10px 10px", "20px 30px", "20px 50px"]}
       bg={"#000"}
       overflowX="hidden"
-      
       mx="auto"
     >
       <Intro color={color} marginLeft={marginLeft} />
       <Portfolio color={color} marginLeft={marginLeft} />
       <About color={color} marginLeft={marginLeft} />
-      <Projects color={color} marginLeft={marginLeft} />
-      <Contact color={color} marginLeft={marginLeft} />
+      <Projects color={color} />
+      <Contact color={color} />
     </Box>
   );
 };

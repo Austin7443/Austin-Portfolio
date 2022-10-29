@@ -18,7 +18,6 @@ export const Project = ({ color }) => {
             "repeat(3, 1fr)",
           ]}
           gap="1em"
-          //templateRows={["-25%", "-25%", "43%"]}
         >
           {data.map((data, i) => (
             <>
@@ -31,8 +30,7 @@ export const Project = ({ color }) => {
                       key={i}
                       w={["100%", "100%", "400px"]}
                       h={"100%"}
-                      //className="reveal"
-                      // id="card"
+                      loading="lazy"
                     />
                   </Box>
                   <Box className="face back" id="ani" rounded={"lg"}>

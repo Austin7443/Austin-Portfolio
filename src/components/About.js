@@ -25,9 +25,11 @@ export const About = ({ color, marginLeft }) => {
           fontWeight={"bold"}
           color={secondary || "#FFFFFF"}
           textAlign={["center", "center", "start"]}
-          letterSpacing={-5}
         >
-          <HStack>
+          <HStack
+            letterSpacing={-5}
+            justifyContent={["center", "center", "start"]}
+          >
             <span id="shake">A</span>
             <span id="shake">b</span>
             <span id="shake">o</span>
@@ -89,9 +91,9 @@ export const About = ({ color, marginLeft }) => {
         src={profile}
         alt="profile image"
         maxW={"400px"}
-        //zIndex={2}
         className="reveal"
         p={["50px", "0px", ""]}
+        loading="lazy"
       />
     </Flex>
   );

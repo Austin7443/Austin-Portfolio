@@ -1,9 +1,7 @@
 import { Box, Text } from "@chakra-ui/react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-//import { Navbar } from "./components/Navbar";
 import { Project } from "./pages/Project";
 import { Home } from "./pages/Home";
-// import { Technologies } from "./components/Technologies";
 import "./index.css";
 import { Navbar2 } from "./components/Navbar2";
 
