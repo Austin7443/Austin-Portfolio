@@ -3,7 +3,7 @@ import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import { Project } from "./pages/Project";
 import { Home } from "./pages/Home";
 import "./index.css";
-import { Navbar2 } from "./components/Navbar2";
+import { Navbar21 } from "./components/Navbar21";
 
 function App() {
   const color = {
@@ -35,7 +35,7 @@ function App() {
   return (
     <Box overflowX={"hidden"} maxW={"1500px"} mx={"auto"}>
       <Router>
-        <Navbar2 color={color} />
+        <Navbar21 color={color} />
 
         <Box>
           <Routes>

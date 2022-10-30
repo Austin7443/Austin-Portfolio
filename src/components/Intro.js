@@ -23,7 +23,7 @@ export const Intro = ({ marginLeft, color }) => {
         </Text>
         <Stack
           lineHeight={[0.9, 0.9, 1]}
-          letterSpacing={[-1.5, -6.5]}
+          letterSpacing={[-1.5, -1.5, -6.5]}
           ml={marginLeft}
           fontSize={["2.8rem", "3rem", "7rem"]}
           fontWeight={"bold"}

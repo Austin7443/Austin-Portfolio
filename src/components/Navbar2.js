@@ -1,27 +1,41 @@
-import React, { useState } from "react";
+import { useEffect, useState } from "react";
 import {
-  Text,
-  HStack,
-  Button,
   Box,
-  Switch,
-  UnorderedList,
-  ListItem,
   Flex,
+  Text,
+  Button,
+  Menu,
+  MenuButton,
+  useDisclosure,
+  useBreakpointValue,
+  HStack,
+  Switch,
 } from "@chakra-ui/react";
-import audio from "../components/audio.mp3";
+import { FiChevronDown } from "react-icons/fi";
+import { MdClear, MdMenu } from "react-icons/md";
 import { FaSoundcloud } from "react-icons/fa";
-import { GiHamburgerMenu } from "react-icons/gi";
-import { MdClose } from "react-icons/md";
-import "../index.css";
+import audio from "../components/audio.mp3";
 
 const media = new Audio(audio);
 media.controls = true;
-media.loop = true
+media.loop = true;
 
-export const Navbar2 = () => {
+const NavBar2 = () => {
+  const links = [
+    { name: "Home", route: "/" },
+    { name: "About", route: "#about" },
+    { name: "Projects", route: "#projects" },
+    { name: "Contact Us", route: "#contact" },
+  ];
+  const { isOpen, onOpen, onClose } = useDisclosure();
+  const menuOpen = useBreakpointValue([false, false, false, true]);
+  const [showMenu, setShowMenu] = useState(null);
   const [toggle, setToggle] = useState(false);
-  const [mobile, setMobile] = useState(false);
+
+  useEffect(() => {
+    setShowMenu(menuOpen);
+  }, [menuOpen]);
+  const fontSizes = ["1rem", "1rem", "1.2rem", null];
 
   const playAudio = () => {
     setToggle(!toggle);
@@ -30,12 +44,20 @@ export const Navbar2 = () => {
     } else {
       media.pause();
     }
-  }
+  };
 
   return (
-    <>
-      <nav className="navbar">
-        <HStack fontWeight={"semibold"} className="logo">
+    <Flex
+      id="top"
+      px={[8, 4, 10, 14]}
+      alignItems={[null, "space-between", "space-between", "center"]}
+      justifyContent={["space-between"]}
+      direction={["column", "column", "column", "row"]}
+      pt={4}
+      bg={["#000"]}
+    >
+      <Flex alignItems="center" flexGrow={1} justifyContent="space-between">
+        <HStack fontWeight={"semibold"} className="logo" alignItems={"center"}>
           <FaSoundcloud size={["2.5rem"]} color={"#2A9D8F"} />
           <Text color={"#FFFFFF"} fontSize={["1rem", "1rem", "1.2rem"]}>
             Sound
@@ -50,81 +72,105 @@ export const Navbar2 = () => {
             />
           </Box>
         </HStack>
-        <UnorderedList
-          alignItems={"center"}
-          className={mobile ? "nav-links-mobile" : "nav-links"}
-          right={0}
-          listStyleType={"none"}
-          onClick={() => setMobile(false)}
-          fontSize={"1.4rem"}
-          overflowX={"hidden"}
-          zIndex={2}
+        <Box
+          display={["block", "block", "block", "none"]}
+          onClick={() => setShowMenu(!showMenu)}
         >
-          <Flex
-            w={["100%", "100%", "75%", "55%"]}
-            justify={["center", "center", "space-between", "space-between"]}
-            align={"center"}
-            direction={["column", "column", "row", "row"]}
-            fontWeight={["semibold"]}
-          >
-            <Box mb={["-20px", "-20px", "0px", "0px"]}>
-              <a href="/" className="home">
-                <ListItem className="pad">Home</ListItem>
-              </a>
-            </Box>
-            <Box my={["-20px", "-20px", "-20px", "0px"]}>
-              <a href="#about" className="about">
-                <ListItem className="pad">About</ListItem>
-              </a>
-            </Box>
-            <Box my={["-20px", "-20px", "-20px", "0px"]}>
-              <a href="#projects" className="projects">
-                <ListItem className="pad">Projects</ListItem>
-              </a>
-            </Box>
-            <Box my={["-20px", "-20px", "-20px", "0px"]}>
-              <a href="#contact" className="contact">
-                <ListItem className="pad">Contact</ListItem>
-              </a>
-            </Box>
-            <Box
-              mt={["-20px", "-20px", "0px", "0px"]}
-            >
-              <a href="https://austin-cv.netlify.app/" className="resume">
-                <Button
-                  id="button"
-                  fontSize={["1.4rem", "1.4rem", "1.4rem", "1.2rem"]}
-                  fontWeight={["semibold", "semibold", "light"]}
-                  color={["#000", "#000", "#2A9D8F", "#2A9D8F"]}
-                  border={"2px solid #2A9D8F"}
-                  borderRadius={"none"}
-                  bg={"transparent"}
-                  size={"lg"}
-                  p={["0px", "0px", "5px 10px", "10px 20px"]}
-                >
-                  Resume
-                </Button>
-              </a>
-            </Box>
-          </Flex>
-        </UnorderedList>
-        <Button
-          id="mobile-menu-icon"
-          onClick={() => setMobile(!mobile)}
-          aria-label="Menu-icon"
-        >
-          {mobile ? <MdClose /> : <GiHamburgerMenu />}
-        </Button>
-      </nav>
-      <Text
-        fontStyle="italic"
-        fontSize={"1rem"}
-        color={"#878787"}
-        position={"absolute"}
-        zIndex={30}
+          {showMenu ? (
+            <MdClear size="1.5rem" color="#2A9D8F" />
+          ) : (
+            <MdMenu size="1.5rem" color="#2A9D8F" />
+          )}
+        </Box>
+      </Flex>
+
+      <Flex
+        color="#2A9D8F"
+        ml={[null, null, 0, "auto"]}
+        mt={[null, null, 3, 0]}
+        fontFamily="trendaregular"
+        justifyContent="space-around"
+        fontSize={[null, "1rem", null, null]}
+        direction={["column", "column", "row", "row"]}
+        alignItems={["center", "center", null, null]}
+        sx={{
+          "& .chakra-button:not(.resume)": {
+            "&, &:hover, &:focus, &:active": {
+              background: "none",
+              boxShadow: "none",
+            },
+          },
+        }}
+        //eslint-disable-next-line
+        display={showMenu ? "flex" : "none"}
       >
-        {"<html>"}
-      </Text>
-    </>
+        {links.map((link, index) => {
+          return link.route !== "" ? (
+            <Button
+              key={index}
+              sx={{
+                "& .activeLink::after": {
+                  content: '""',
+                  position: "absolute",
+                  width: "50%",
+                  height: "1rem",
+                  clipPath: "polygon(13% 78%, 91% 78%, 100% 100%, 0% 100%)",
+                  transform: "translate(-50%, -50%)",
+                  bottom: "-35%",
+                  left: "50%",
+                  background: "#F98B88",
+
+                  "@media screen and (max-width: 48em )": {
+                    bottom: "-20%",
+                  },
+                },
+              }}
+              fontSize={fontSizes}
+            >
+              <a href={`${link.route}`} className="pad">
+                {link.name}
+              </a>
+            </Button>
+          ) : (
+            <Menu key={index} isOpen={isOpen} onClose={onClose}>
+              <MenuButton
+                as={Button}
+                onClick={onOpen}
+                onMouseLeave={onClose}
+                onMouseOver={onOpen}
+                rightIcon={<FiChevronDown />}
+                fontSize={fontSizes}
+              >
+                {link.name}
+              </MenuButton>
+            </Menu>
+          );
+        })}
+        <Button
+          className="resume"
+          as="a"
+          href="https://austin-cv.netlify.app/"
+          id="button"
+          fontSize={["1.4rem", "1.4rem", "1.4rem", "1.2rem"]}
+          fontWeight={["semibold", "semibold", "light"]}
+          color={["#2A9D8F", "#2A9D8F", "#2A9D8F", "#2A9D8F"]}
+          border={["2px solid #2A9D8F"]}
+          borderRadius={"none"}
+          bg={["transparent"]}
+          size={"lg"}
+          p={["5px 10px", "10px 20px"]}
+          _hover={{ bg: "#9A82B880" }}
+          _focus={{ border: "none" }}
+          // ml={[null, null, 3, 3]}
+          mt={["1rem", "1rem", 0, 0]}
+        >
+          <Box pos="relative" top="-1px">
+            Resume
+          </Box>
+        </Button>
+      </Flex>
+    </Flex>
   );
 };
+
+export default NavBar2;

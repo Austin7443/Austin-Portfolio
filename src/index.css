@@ -12,7 +12,7 @@
   transform: translateY(0);
   opacity: 1;
 }
-/* new nav */
+/*  navbar */
 .navbar {
   display: flex;
   justify-content: space-around;
@@ -29,16 +29,6 @@
   display: flex;
   justify-content: flex-end;
   width: 75%;
-}
-.home,
-.about,
-.projects,
-.contact,
-.resume {
-  text-decoration: none;
-  color: #808080;
-  margin: 0 10px;
-  
 }
 #mobile-menu-icon {
   display: none;
@@ -69,10 +59,7 @@
   .resume {
     color: #000;
     width: 100%;
-    /* transition: all 0.5s ease-out; */
-  }
-  .resume {
-    border: none;
+    transition: all 0.5s ease-out;
   }
   .mobile-menu-icon {
     display: block;
@@ -82,11 +69,12 @@
     right: 25px;
   }
 }
-/* new nav */
+/* Bounce animation */
 #shake:hover {
   color: #2a9d8f;
   animation-name: shake;
   animation-duration: 1.5s;
+  backface-visibility: hidden;
 }
 @keyframes shake {
   0% {
@@ -108,9 +96,6 @@
   border-radius: 4px;
 }
 
-#mobile-menu-icon {
-  display: none;
-}
 @media screen and (max-width: 780px) {
   #mobile-menu-icon {
     display: block;
@@ -131,6 +116,7 @@
     width: 100%;
   }
 }
+/* Animation */
 .text-wrapper {
   border-radius: 50%;
   /* border: 1px solid red; */
@@ -166,6 +152,7 @@
     transform: rotate(405deg);
   }
 }
+/* Typing Animation */
 #me {
   position: relative;
 }
