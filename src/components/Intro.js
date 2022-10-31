@@ -20,7 +20,7 @@ export const Intro = ({ marginLeft, color }) => {
         >
           {"<body>"}
         </Text>
-        <Text fontStyle="italic" fontSize={"1rem"} color={"#878787"}>
+        <Text fontStyle="italic" fontSize={"1rem"} color={"#878787"} pt={["20px", "20px", "0"]}>
           {"<h1>"}
         </Text>
         <Stack
@@ -36,7 +36,7 @@ export const Intro = ({ marginLeft, color }) => {
             <Text>Hi,</Text>
             <Text>I'm Austin,</Text>
             <Text>
-              I'm a{" "}
+              Web{" "}
               <Box as="span" id="me" color={secondary} className="ani">
                 Developer.
               </Box>
@@ -60,7 +60,7 @@ export const Intro = ({ marginLeft, color }) => {
         <Text fontStyle="italic" fontSize={"1rem"} color={"#878787"}>
           {"</p>"}
         </Text>
-        <Flex justify={["center", "flex-start", "flex-start"]}>
+        <Flex justify={[ "flex-start", "flex-start"]}>
           <Button
             id="button"
             aria-label="Contact me"
@@ -72,7 +72,7 @@ export const Intro = ({ marginLeft, color }) => {
             bg={"transparent"}
             mt={"30px"}
             mb={["100px"]}
-            ml={[0, 0, marginLeft]}
+            ml={[ marginLeft]}
             size={"lg"}
             w={"250px"}
             zIndex={20}
