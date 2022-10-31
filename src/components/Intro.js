@@ -6,7 +6,9 @@ export const Intro = ({ marginLeft, color }) => {
   const { secondary } = color;
   return (
     <Box position={"relative"}>
-      <Box position={"absolute"} zIndex={10} background={"transparent"}>
+      <Box position={"absolute"} zIndex={10} background={"transparent"} 
+      h={["85vh", "85vh", "100%", "100%"]}
+      >
         <Span />
       </Box>
       <Box position={"relative"}>
@@ -22,13 +24,13 @@ export const Intro = ({ marginLeft, color }) => {
           {"<h1>"}
         </Text>
         <Stack
-          lineHeight={[0.9, 0.9, 1]}
+          lineHeight={1}
           letterSpacing={[-1.5, -1.5, -6.5]}
           ml={marginLeft}
-          fontSize={["2.8rem", "3rem", "7rem"]}
+          fontSize={["3.2rem", "3rem", "7rem"]}
           fontWeight={"bold"}
           color={"#FBFBFB" || "#FFFFFF"}
-          py={"5px"}
+          py={["15px", "15px", "5px"]}
         >
           <Box zIndex={4}>
             <Text>Hi,</Text>
@@ -48,7 +50,7 @@ export const Intro = ({ marginLeft, color }) => {
           {"<p>"}
         </Text>
         <Text
-          fontSize={["1.5rem", "1.5rem", "2rem"]}
+          fontSize={["1.7rem", "1.7rem", "2.2rem"]}
           color={"#808080"}
           ml={marginLeft}
           className="hi"
@@ -69,7 +71,7 @@ export const Intro = ({ marginLeft, color }) => {
             borderRadius={"none"}
             bg={"transparent"}
             mt={"30px"}
-            mb={"100px"}
+            mb={["100px"]}
             ml={[0, 0, marginLeft]}
             size={"lg"}
             w={"250px"}

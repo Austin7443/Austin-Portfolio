@@ -13,8 +13,8 @@ export const Portfolio = ({ color, marginLeft }) => {
   const navigate = useNavigate();
   const { primary, secondary, tertiary } = color;
   return (
-    <Box id="projects">
-      <Box className="reveal">
+    <Box id="projects" className={"reveal"}>
+      <Box >
         <Flex
           align={["center", "center", "flex-end"]}
           direction={["column", "column", "row"]}
