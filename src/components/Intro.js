@@ -7,7 +7,7 @@ export const Intro = ({ marginLeft, color }) => {
   return (
     <Box position={"relative"}>
       <Box position={"absolute"} zIndex={10} background={"transparent"} 
-      h={["85vh", "85vh", "100%", "100%"]}
+      h={["75vh", "85vh", "100%", "100%"]}
       >
         <Span />
       </Box>

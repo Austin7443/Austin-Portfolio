@@ -21,7 +21,7 @@
   background-color: #000;
   position: fixed;
   width: 100%;
-  z-index: 20;
+  z-index: 40;
   max-width: 1500px;
   cursor: pointer;
 }
@@ -47,7 +47,7 @@
     position: absolute;
     display: block;
     list-style: none;
-    background-color: #2a9d8f;
+    background-color: #242424;
     top: 75px;
     transition: all 0.5s ease-out;
     width: 100%;
@@ -57,7 +57,7 @@
   .projects,
   .contact,
   .resume {
-    color: #000;
+    color: #808080;
     width: 100%;
     transition: all 0.5s ease-out;
   }
