@@ -75,7 +75,7 @@ export const Contact = ({ color }) => {
           </Text>
           <Text
             lineHeight={0.8}
-            fontSize={["3rem", "3rem", "6rem"]}
+            fontSize={["2rem", "2.5rem", "6rem"]}
             fontWeight={"semibold"}
             color={secondary || "#FFFFFF"}
             textAlign={"center"}
@@ -139,7 +139,7 @@ export const Contact = ({ color }) => {
                   border={"2px solid #2A9D8F"}
                   borderRadius={"none"}
                   bg={"transparent"}
-                  mt={"30px"}
+                  mt={["20px", "20px", "30px"]}
                   size={"lg"}
                   textAlign={"center"}
                   justifyContent={"center"}
@@ -161,7 +161,7 @@ export const Contact = ({ color }) => {
             w={"100%"}
             mx={"auto"}
             display={["flex", "flex", "none"]}
-            mt={["70px", "70px", "100px"]}
+            mt={["50px", "50px", "100px"]}
           >
             <Flex
               w={"70%"}

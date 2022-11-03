@@ -17,7 +17,7 @@ export const Home = () => {
   return (
     <Box
       w={"100%"}
-      p={["10px 10px", "20px 30px", "20px 50px"]}
+      p={["10px 10px 0 10px", "20px 30px 0 30px", "20px 50px 0 50px"]}
       bg={"#000"}
       overflowX="hidden"
       mx="auto"

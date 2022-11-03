@@ -84,7 +84,7 @@ export const Intro = ({ marginLeft, color }) => {
           <Button
             id="button"
             aria-label="Contact me"
-            fontSize={"1.2rem"}
+            fontSize={["0.8rem", "0.9rem", "1.2rem"]}
             fontWeight={"light"}
             color={"#2A9D8F"}
             border={"2px solid #2A9D8F"}

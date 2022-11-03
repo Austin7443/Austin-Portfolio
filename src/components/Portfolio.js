@@ -44,7 +44,7 @@ export const Portfolio = ({ color, marginLeft }) => {
             <Text
               lineHeight={0.8}
               ml={[0, 0, marginLeft]}
-              fontSize={["2.5rem", "3rem", "6rem"]}
+              fontSize={["2rem", "2.5rem", "6rem"]}
               fontWeight={"semibold"}
               color={secondary || "#FFFFFF"}
               textAlign={["center", "center", "start"]}
@@ -117,6 +117,7 @@ export const Portfolio = ({ color, marginLeft }) => {
             aria-label="See more"
             fontSize={["15px", "16px", "19px"]}
             fontWeight={"light"}
+            ml={[marginLeft, marginLeft, 0]}
             color={secondary}
             border={"2px solid #2A9D8F"}
             borderRadius={"none"}
