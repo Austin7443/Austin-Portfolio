@@ -76,7 +76,7 @@ export const Contact = ({ color }) => {
           <Text
             lineHeight={0.8}
             fontSize={["3rem", "3rem", "6rem"]}
-            fontWeight={"bold"}
+            fontWeight={"semibold"}
             color={secondary || "#FFFFFF"}
             textAlign={"center"}
             id="contact"
@@ -133,7 +133,7 @@ export const Contact = ({ color }) => {
                   w={"200px"}
                   id="button"
                   aria-label="Say Hello"
-                  fontSize={"1.2rem"}
+                  fontSize={["15px", "16px", "19px"]}
                   fontWeight={"light"}
                   color={secondary}
                   border={"2px solid #2A9D8F"}
@@ -161,7 +161,7 @@ export const Contact = ({ color }) => {
             w={"100%"}
             mx={"auto"}
             display={["flex", "flex", "none"]}
-            mt={"100px"}
+            mt={["70px", "70px", "100px"]}
           >
             <Flex
               w={"70%"}
@@ -188,10 +188,10 @@ export const Contact = ({ color }) => {
             </Flex>
           </Box>
           <Text
-            fontSize={"1rem"}
+            fontSize={["0.7rem", "0,7rem", "1rem"]}
             color={secondary}
             textAlign={"center"}
-            py={["15px", "15px", "0"]}
+            py={["10px", "10px", "0"]}
           >
             Designed and Built by Austin Onueze
           </Text>

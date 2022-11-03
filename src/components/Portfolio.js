@@ -45,7 +45,7 @@ export const Portfolio = ({ color, marginLeft }) => {
               lineHeight={0.8}
               ml={[0, 0, marginLeft]}
               fontSize={["2.5rem", "3rem", "6rem"]}
-              fontWeight={"bold"}
+              fontWeight={"semibold"}
               color={secondary || "#FFFFFF"}
               textAlign={["center", "center", "start"]}
             >
@@ -122,7 +122,7 @@ export const Portfolio = ({ color, marginLeft }) => {
             borderRadius={"none"}
             bg={"transparent"}
             size={"lg"}
-            w={["100%", "100%", "250px"]}
+            w={["90%", "90%", "250px"]}
             onClick={() => {
               navigate("/project");
             }}

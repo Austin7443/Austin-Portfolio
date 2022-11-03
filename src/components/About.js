@@ -26,7 +26,7 @@ export const About = ({ color, marginLeft }) => {
           lineHeight={0.8}
           ml={[0, 0, marginLeft]}
           fontSize={["2.7rem", "3rem", "6rem"]}
-          fontWeight={"bold"}
+          fontWeight={"semibold"}
           color={secondary || "#FFFFFF"}
           textAlign={["center", "center", "start"]}
         >

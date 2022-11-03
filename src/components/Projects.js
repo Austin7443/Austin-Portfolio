@@ -143,12 +143,20 @@ export const Projects = ({ color }) => {
         >
           <Box w={"100%"}>
             <Flex justify={["center", "center", "flex-end"]}>
-              <Text fontSize={"1.5rem"} color={secondary} fontWeight={"bold"}>
+              <Text
+                fontSize={"1.5rem"}
+                color={secondary}
+                fontWeight={"semibold"}
+              >
                 Technologies Used
               </Text>
             </Flex>
             <Flex justify={["center", "center", "flex-end"]}>
-              <Text fontSize={"2.2rem"} color={tertiary} fontWeight={"bold"}>
+              <Text
+                fontSize={"2.2rem"}
+                color={tertiary}
+                fontWeight={"semibold"}
+              >
                 My Daily Tools
               </Text>
             </Flex>
@@ -158,6 +166,7 @@ export const Projects = ({ color }) => {
                 maxW={["600px"]}
                 p={"40px"}
                 border={`3px solid ${tertiary}`}
+                fontSize={["14px", "14px", "16px"]}
               >
                 These are some of the tools that help me build amazing products.
                 I work with these on daily basis and have a good understanding
@@ -192,7 +201,11 @@ export const Projects = ({ color }) => {
             </Box>
             <Flex justify={["center", "center", "center", "flex-end"]}>
               <Box>
-                <HStack spacing={[2, 2, 4]} py={"20px"} fontSize={["13px", "14px", "16px"]}>
+                <HStack
+                  spacing={[2, 2, 4]}
+                  py={"20px"}
+                  fontSize={["13px", "14px", "16px"]}
+                >
                   <Text>HTML</Text>
                   <Text>CSS</Text>
                   <Text>JavaScript</Text>
