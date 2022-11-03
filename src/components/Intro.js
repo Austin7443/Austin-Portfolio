@@ -95,7 +95,7 @@ export const Intro = ({ marginLeft, color }) => {
             mb={["100px"]}
             ml={[marginLeft]}
             size={"lg"}
-            w={"270px"}
+            w={["230px","235px", "270px"]}
             zIndex={20}
             alignItems={"center"}
           >
