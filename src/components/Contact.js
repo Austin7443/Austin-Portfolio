@@ -120,7 +120,11 @@ export const Contact = ({ color }) => {
                 p={["20px", "20px", "50px"]}
                 textAlign={"center"}
               >
-                <Text maxW={"520px"} fontSize={"1.2rem"} color={primary}>
+                <Text
+                  maxW={"520px"}
+                  fontSize={["15px", "16px", "19px"]}
+                  color={primary}
+                >
                   You can reach out to me through any of my contact options, my
                   inbox is always open. Whether you have a question or just want
                   to say hi, I’ll try my best to get back to you!

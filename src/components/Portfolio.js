@@ -85,13 +85,14 @@ export const Portfolio = ({ color, marginLeft }) => {
             </Text>
             <Text
               maxW={"800px"}
-              fontSize={"1.2rem"}
+              fontSize={["15px", "16px", "19px"]}
               color={primary}
               ml={marginLeft}
             >
-              A small gallery of some projects I have worked on. I built some alone and others I built
-              with some amazing developers. I'll keep updating as the
-              list grows - I promise :). To get a clearer glimpse - visit{" "}
+              A small gallery of some projects I have worked on. I built some
+              alone and others I built with some amazing developers. I'll keep
+              updating as the list grows - I promise :). To get a clearer
+              glimpse - visit{" "}
               <Text
                 as="span"
                 color={secondary}

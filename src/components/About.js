@@ -25,7 +25,7 @@ export const About = ({ color, marginLeft }) => {
         <Text
           lineHeight={0.8}
           ml={[0, 0, marginLeft]}
-          fontSize={["3rem", "3rem", "6rem"]}
+          fontSize={["2.7rem", "3rem", "6rem"]}
           fontWeight={"bold"}
           color={secondary || "#FFFFFF"}
           textAlign={["center", "center", "start"]}
@@ -80,9 +80,10 @@ export const About = ({ color, marginLeft }) => {
         </Text>
         <Text
           maxW={"500px"}
-          fontSize={"1.2rem"}
+          //fontSize={"1.2rem"}
           color={primary}
           ml={marginLeft}
+          fontSize={["15px", "16px", "19px"]}
         >
           I'm a sessioned frontend developer who have been passionate about the
           web and building user-friendly product from the day I found out about

@@ -192,7 +192,7 @@ export const Projects = ({ color }) => {
             </Box>
             <Flex justify={["center", "center", "center", "flex-end"]}>
               <Box>
-                <HStack spacing={[2, 2, 4]} py={"20px"}>
+                <HStack spacing={[2, 2, 4]} py={"20px"} fontSize={["13px", "14px", "16px"]}>
                   <Text>HTML</Text>
                   <Text>CSS</Text>
                   <Text>JavaScript</Text>
