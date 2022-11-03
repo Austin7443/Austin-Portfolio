@@ -68,26 +68,28 @@ export const Portfolio = ({ color, marginLeft }) => {
                 <span id="shake">o</span>
               </HStack>
             </Text>
-            <Text
-              fontSize={["0.8rem", "0,8rem", "1rem"]}
-              color={tertiary}
-              fontFamily={"Brush Script MT, Brush Script Std, cursive"}
-            >
-              {"<h2>"}
-            </Text>
+            <Box lineHeight={[0.7, 0.7, ""]}>
+              <Text
+                fontSize={["0.8rem", "0,8rem", "1rem"]}
+                color={tertiary}
+                fontFamily={"Brush Script MT, Brush Script Std, cursive"}
+              >
+                {"<h2>"}
+              </Text>
 
-            <Text
-              fontSize={["0.8rem", "0,8rem", "1rem"]}
-              color={tertiary}
-              fontFamily={"Brush Script MT, Brush Script Std, cursive"}
-            >
-              {"<p>"}
-            </Text>
+              <Text
+                fontSize={["0.8rem", "0,8rem", "1rem"]}
+                color={tertiary}
+                fontFamily={"Brush Script MT, Brush Script Std, cursive"}
+              >
+                {"<p>"}
+              </Text>
+            </Box>
             <Text
               maxW={"800px"}
               fontSize={["15px", "16px", "19px"]}
               color={primary}
-              ml={["15px", "15px", "0"]}
+              ml={["15px", "15px", marginLeft]}
             >
               A small gallery of some projects I have worked on. I built some
               alone and others I built with some amazing developers. I'll keep
@@ -123,7 +125,7 @@ export const Portfolio = ({ color, marginLeft }) => {
             borderRadius={"none"}
             bg={"transparent"}
             size={"lg"}
-            w={["90%", "90%", "250px"]}
+            w={["95%", "95%", "250px"]}
             onClick={() => {
               navigate("/project");
             }}

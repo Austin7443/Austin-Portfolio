@@ -53,6 +53,7 @@ export const About = ({ color, marginLeft }) => {
         </Text>
         <Text
           fontSize={["0.8rem", "0,8rem", "1rem"]}
+          lineHeight={[0.7, 0.7, ""]}
           color={tertiary}
           fontFamily={"Brush Script MT, Brush Script Std, cursive"}
         >
@@ -76,6 +77,7 @@ export const About = ({ color, marginLeft }) => {
           fontSize={["0.8rem", "0,8rem", "1rem"]}
           color={tertiary}
           fontFamily={"Brush Script MT, Brush Script Std, cursive"}
+          lineHeight={[0.7, 0.7, ""]}
         >
           {"<p>"}
         </Text>

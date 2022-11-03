@@ -18,7 +18,7 @@ export const Intro = ({ marginLeft, color }) => {
         <Text
           fontSize={["0.8rem", "0,8rem", "1rem"]}
           color={"#878787"}
-          pt={["70px", "70px", "50px"]}
+          pt={["100px", "100px", "50px"]}
           fontFamily={"Brush Script MT, Brush Script Std, cursive"}
         >
           {"<body>"}
@@ -26,7 +26,7 @@ export const Intro = ({ marginLeft, color }) => {
         <Text
           fontSize={["0.8rem", "0,8rem", "1rem"]}
           color={"#878787"}
-          pt={["20px", "20px", "0"]}
+          pt={["0"]}
           fontFamily={"Brush Script MT, Brush Script Std, cursive"}
         >
           {"<h1>"}
@@ -60,6 +60,7 @@ export const Intro = ({ marginLeft, color }) => {
         </Text>
         <Text
           fontSize={["0.8rem", "0,8rem", "1rem"]}
+          lineHeight={[0.5, 0.5, ""]}
           color={"#878787"}
           fontFamily={"Brush Script MT, Brush Script Std, cursive"}
         >
@@ -94,7 +95,7 @@ export const Intro = ({ marginLeft, color }) => {
             mb={["100px"]}
             ml={[marginLeft]}
             size={"lg"}
-            w={"250px"}
+            w={"270px"}
             zIndex={20}
             alignItems={"center"}
           >

@@ -100,6 +100,7 @@ export const Contact = ({ color }) => {
           </Text>
           <Text
             fontSize={["0.8rem", "0,8rem", "1rem"]}
+            lineHeight={[0.5, 0.5, ""]}
             color={tertiary}
             fontFamily={"Brush Script MT, Brush Script Std, cursive"}
           >
