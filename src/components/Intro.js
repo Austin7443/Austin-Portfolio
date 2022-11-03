@@ -5,35 +5,43 @@ import { Span } from "./Span";
 export const Intro = ({ marginLeft, color }) => {
   const { secondary } = color;
   return (
-    <Box position={"relative"}>
-      <Box position={"absolute"} zIndex={10} background={"transparent"} 
-      h={["75vh", "85vh", "100%", "100%"]}
+    <Box position={"relative"} cursor="pointer">
+      <Box
+        position={"absolute"}
+        zIndex={10}
+        background={"transparent"}
+        h={["75vh", "85vh", "100%", "100%"]}
       >
         <Span />
       </Box>
       <Box position={"relative"}>
         <Text
-          fontStyle="italic"
-          fontSize={"1rem"}
+          fontSize={["0.8rem", "0,8rem", "1rem"]}
           color={"#878787"}
           pt={["70px", "70px", "50px"]}
+          fontFamily={"Brush Script MT, Brush Script Std, cursive"}
         >
           {"<body>"}
         </Text>
-        <Text fontStyle="italic" fontSize={"1rem"} color={"#878787"} pt={["20px", "20px", "0"]}>
+        <Text
+          fontSize={["0.8rem", "0,8rem", "1rem"]}
+          color={"#878787"}
+          pt={["20px", "20px", "0"]}
+          fontFamily={"Brush Script MT, Brush Script Std, cursive"}
+        >
           {"<h1>"}
         </Text>
         <Stack
           lineHeight={1}
           letterSpacing={[-1.5, -1.5, -6.5]}
           ml={marginLeft}
-          fontSize={["3.2rem", "3rem", "7rem"]}
+          fontSize={["3rem", "3rem", "7rem"]}
           fontWeight={"bold"}
           color={"#FBFBFB" || "#FFFFFF"}
           py={["15px", "15px", "5px"]}
         >
           <Box zIndex={4}>
-            <Text>Hi,</Text>
+            <Text>Hi!</Text>
             <Text>I'm Austin,</Text>
             <Text>
               Web{" "}
@@ -43,10 +51,18 @@ export const Intro = ({ marginLeft, color }) => {
             </Text>
           </Box>
         </Stack>
-        <Text fontStyle="italic" fontSize={"1rem"} color={"#878787"}>
+        <Text
+          fontSize={["0.8rem", "0,8rem", "1rem"]}
+          color={"#878787"}
+          fontFamily={"Brush Script MT, Brush Script Std, cursive"}
+        >
           {"</h1>"}
         </Text>
-        <Text fontStyle="italic" fontSize={"1rem"} color={"#878787"}>
+        <Text
+          fontSize={["0.8rem", "0,8rem", "1rem"]}
+          color={"#878787"}
+          fontFamily={"Brush Script MT, Brush Script Std, cursive"}
+        >
           {"<p>"}
         </Text>
         <Text
@@ -57,10 +73,14 @@ export const Intro = ({ marginLeft, color }) => {
         >
           Frontend Developer
         </Text>
-        <Text fontStyle="italic" fontSize={"1rem"} color={"#878787"}>
+        <Text
+          fontSize={["0.8rem", "0,8rem", "1rem"]}
+          color={"#878787"}
+          fontFamily={"Brush Script MT, Brush Script Std, cursive"}
+        >
           {"</p>"}
         </Text>
-        <Flex justify={[ "flex-start", "flex-start"]}>
+        <Flex justify={["flex-start", "flex-start"]}>
           <Button
             id="button"
             aria-label="Contact me"
@@ -72,7 +92,7 @@ export const Intro = ({ marginLeft, color }) => {
             bg={"transparent"}
             mt={"30px"}
             mb={["100px"]}
-            ml={[ marginLeft]}
+            ml={[marginLeft]}
             size={"lg"}
             w={"250px"}
             zIndex={20}

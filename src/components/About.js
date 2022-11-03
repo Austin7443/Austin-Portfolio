@@ -15,7 +15,11 @@ export const About = ({ color, marginLeft }) => {
       direction={["column", "column", "column", "row"]}
     >
       <Box bg={""} className="reveal">
-        <Text fontStyle="italic" fontSize={"1rem"} color={tertiary}>
+        <Text
+          fontSize={["0.8rem", "0,8rem", "1rem"]}
+          color={tertiary}
+          fontFamily={"Brush Script MT, Brush Script Std, cursive"}
+        >
           {"<h2>"}
         </Text>
         <Text
@@ -27,21 +31,30 @@ export const About = ({ color, marginLeft }) => {
           textAlign={["center", "center", "start"]}
         >
           <HStack
-            letterSpacing={-5}
+            letterSpacing={-12}
             justifyContent={["center", "center", "start"]}
           >
-            <span id="shake">A</span>
-            <span id="shake">b</span>
-            <span id="shake">o</span>
-            <span id="shake">u</span>
+            <span id="shake">C</span>
+            <span id="shake">h</span>
+            <span id="shake">e</span>
+            <span id="shake">c</span>
             <span id="shake" style={{ paddingRight: "20px" }}>
-              t
+              k
             </span>
             <span id="shake">m</span>
-            <span id="shake">e</span>
+            <span id="shake" style={{ paddingRight: "20px" }}>
+              e
+            </span>
+            <span id="shake">o</span>
+            <span id="shake">u</span>
+            <span id="shake">t!</span>
           </HStack>
         </Text>
-        <Text fontStyle="italic" fontSize={"1rem"} color={tertiary}>
+        <Text
+          fontSize={["0.8rem", "0,8rem", "1rem"]}
+          color={tertiary}
+          fontFamily={"Brush Script MT, Brush Script Std, cursive"}
+        >
           {"<h2>"}
         </Text>
         <Text
@@ -58,7 +71,11 @@ export const About = ({ color, marginLeft }) => {
           TOOLS
         </Text>
 
-        <Text fontStyle="italic" fontSize={"1rem"} color={tertiary}>
+        <Text
+          fontSize={["0.8rem", "0,8rem", "1rem"]}
+          color={tertiary}
+          fontFamily={"Brush Script MT, Brush Script Std, cursive"}
+        >
           {"<p>"}
         </Text>
         <Text
@@ -67,22 +84,28 @@ export const About = ({ color, marginLeft }) => {
           color={primary}
           ml={marginLeft}
         >
-          I'm Austin Onueze and I'm a Frontend web developer from Lagos,
-          Nigeria. I have had various training and experience with working with
-          other developers which has very much motivated me to keep learning and
-          pushing to get to the peak of my career as a web developer.
+          I'm a sessioned frontend developer who have been passionate about the
+          web and building user-friendly product from the day I found out about
+          it using the latest development principles and techniques. <br />
+          For over a year now, I've had the opportunity to learn from and work
+          with other really cool developers which has led me horn my skill and
+          has kept pushing me to get to the peak of my career.
           <br />
-          I currently work as a frontend developer with Zilight innovation labs,
-          where i work in close collaboration with both team mates and members
-          of other department like the product design team, backend team and
-          marketing team to achieve user friendly products.
-          <br />I specialize in standards-based HTML, CSS, Javascript and React;
-          with various packages and frameworks to develop products to be search
-          engine friendly, using the latest development principles and
-          techniques. To find out more about me and what i can do, check out my
-          contact and reach out.
+          I currently work as a frontend developer with Zealight innovation lab
+          in Lagos, Nigeria. where i work in close collaboration with both the
+          frontend team mates and other teams like the product design team,
+          backend team and marketing team to achieve user friendly products.
+          <br /> Want to know more about me and how I can help you?{" "}
+          <Text as="span" color={secondary} cursor={"pointer"}>
+            {" "}
+            <a href="mailto:austin7443@gmail.com"> Say hi!</a>
+          </Text>{" "}
         </Text>
-        <Text fontStyle="italic" fontSize={"1rem"} color={tertiary}>
+        <Text
+          fontSize={["0.8rem", "0,8rem", "1rem"]}
+          color={tertiary}
+          fontFamily={"Brush Script MT, Brush Script Std, cursive"}
+        >
           {"</p>"}
         </Text>
       </Box>

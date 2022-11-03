@@ -130,11 +130,11 @@ export const Navbar21 = () => {
         </Button>
       </nav>
       <Text
-        fontStyle="italic"
         fontSize={"1rem"}
         color={"#878787"}
         position={"absolute"}
         zIndex={30}
+        fontFamily={"Brush Script MT, Brush Script Std, cursive"}
       >
         {"<html>"}
       </Text>

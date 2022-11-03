@@ -44,10 +44,10 @@ function App() {
             <Route path="/project" element={<Project color={color} />} />
           </Routes>
           <Text
-            fontStyle="italic"
             fontSize={"1rem"}
             color={"#878787"}
             bg={"#000"}
+            fontFamily={"Brush Script MT, Brush Script Std, cursive"}
           >
             {"<html>"}
           </Text>

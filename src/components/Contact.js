@@ -66,7 +66,11 @@ export const Contact = ({ color }) => {
           ></Box>
         </Stack>
         <Box>
-          <Text fontStyle="italic" fontSize={"1rem"} color={tertiary}>
+          <Text
+            fontSize={["0.8rem", "0,8rem", "1rem"]}
+            color={tertiary}
+            fontFamily={"Brush Script MT, Brush Script Std, cursive"}
+          >
             {"<h2>"}
           </Text>
           <Text
@@ -94,11 +98,19 @@ export const Contact = ({ color }) => {
               <span id="shake">h</span>
             </HStack>
           </Text>
-          <Text fontStyle="italic" fontSize={"1rem"} color={tertiary}>
+          <Text
+            fontSize={["0.8rem", "0,8rem", "1rem"]}
+            color={tertiary}
+            fontFamily={"Brush Script MT, Brush Script Std, cursive"}
+          >
             {"<h2>"}
           </Text>
 
-          <Text fontStyle="italic" fontSize={"1rem"} color={tertiary}>
+          <Text
+            fontSize={["0.8rem", "0,8rem", "1rem"]}
+            color={tertiary}
+            fontFamily={"Brush Script MT, Brush Script Std, cursive"}
+          >
             {"<div>"}
           </Text>
           <Flex justify={"center"}>
@@ -133,7 +145,11 @@ export const Contact = ({ color }) => {
               </Box>
             </Box>
           </Flex>
-          <Text fontStyle="italic" fontSize={"1rem"} color={tertiary}>
+          <Text
+            fontSize={["0.8rem", "0,8rem", "1rem"]}
+            color={tertiary}
+            fontFamily={"Brush Script MT, Brush Script Std, cursive"}
+          >
             {"</div>"}
           </Text>
 
@@ -175,17 +191,27 @@ export const Contact = ({ color }) => {
           >
             Designed and Built by Austin Onueze
           </Text>
-          <Text fontStyle="italic" fontSize={"1rem"} color={tertiary}>
+          <Text
+            fontSize={["0.8rem", "0,8rem", "1rem"]}
+            color={tertiary}
+            fontFamily={"Brush Script MT, Brush Script Std, cursive"}
+          >
             {"</body>"}
           </Text>
         </Box>
         <Box display={["none", "none", "block"]}>
           <Stack spacing={36}>
             <a href="mailto:austin7443@gmail.com">
-              <Text className="mail" fontSize={"1.5rem"} mb={["20px"]} mr={["-20px"]} id="shake">
+              <Text
+                className="mail"
+                fontSize={"1.5rem"}
+                mb={["20px"]}
+                mr={["-20px"]}
+                id="shake"
+              >
                 austin7443@gmail.com
               </Text>
-              <Box borderRight={`2px solid ${secondary}`} h={"200px"}></Box>
+              <Box borderRight={`2px solid ${secondary}`} h={"140px"}></Box>
             </a>
           </Stack>
         </Box>

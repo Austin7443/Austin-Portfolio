@@ -14,13 +14,17 @@ export const Portfolio = ({ color, marginLeft }) => {
   const { primary, secondary, tertiary } = color;
   return (
     <Box id="projects" className={"reveal"}>
-      <Box >
+      <Box>
         <Flex
           align={["center", "center", "flex-end"]}
           direction={["column", "column", "row"]}
         >
           <Box bg={""} w={"100%"}>
-            <Text fontStyle="italic" fontSize={"1rem"} color={tertiary}>
+            <Text
+              fontSize={["0.8rem", "0,8rem", "1rem"]}
+              color={tertiary}
+              fontFamily={"Brush Script MT, Brush Script Std, cursive"}
+            >
               {"<h2>"}
             </Text>
 
@@ -64,11 +68,19 @@ export const Portfolio = ({ color, marginLeft }) => {
                 <span id="shake">o</span>
               </HStack>
             </Text>
-            <Text fontStyle="italic" fontSize={"1rem"} color={tertiary}>
+            <Text
+              fontSize={["0.8rem", "0,8rem", "1rem"]}
+              color={tertiary}
+              fontFamily={"Brush Script MT, Brush Script Std, cursive"}
+            >
               {"<h2>"}
             </Text>
 
-            <Text fontStyle="italic" fontSize={"1rem"} color={tertiary}>
+            <Text
+              fontSize={["0.8rem", "0,8rem", "1rem"]}
+              color={tertiary}
+              fontFamily={"Brush Script MT, Brush Script Std, cursive"}
+            >
               {"<p>"}
             </Text>
             <Text
@@ -77,10 +89,9 @@ export const Portfolio = ({ color, marginLeft }) => {
               color={primary}
               ml={marginLeft}
             >
-              A small gallery of projects done by me, both personal projects and
-              clients project. Some i have built alone and others I've done
-              together with other amazing developers. I'll keep updating as the
-              list grows. Interested to see some more? Visit{" "}
+              A small gallery of some projects I have worked on. I built some alone and others I built
+              with some amazing developers. I'll keep updating as the
+              list grows - I promise :). To get a clearer glimpse - visit{" "}
               <Text
                 as="span"
                 color={secondary}
@@ -92,7 +103,11 @@ export const Portfolio = ({ color, marginLeft }) => {
               </Text>{" "}
               page.
             </Text>
-            <Text fontStyle="italic" fontSize={"1rem"} color={tertiary}>
+            <Text
+              fontSize={["0.8rem", "0,8rem", "1rem"]}
+              color={tertiary}
+              fontFamily={"Brush Script MT, Brush Script Std, cursive"}
+            >
               {"</p>"}
             </Text>
           </Box>
@@ -116,10 +131,10 @@ export const Portfolio = ({ color, marginLeft }) => {
         </Flex>
 
         <Text
-          fontStyle="italic"
           fontSize={"1rem"}
           color={tertiary}
           mt={"100px"}
+          fontFamily={"Brush Script MT, Brush Script Std, cursive"}
         >
           {"<img>"}
         </Text>
@@ -129,7 +144,7 @@ export const Portfolio = ({ color, marginLeft }) => {
               "repeat(1, 1fr)",
               "repeat(1, 1fr)",
               "repeat(2, 1fr)",
-              "repeat(3, 1fr)",
+              "repeat(2, 1fr)",
             ]}
             gap="1em"
           >
@@ -187,7 +202,11 @@ export const Portfolio = ({ color, marginLeft }) => {
             ))}
           </Grid>
         </Flex>
-        <Text fontStyle="italic" fontSize={"1rem"} color={tertiary}>
+        <Text
+          fontSize={["0.8rem", "0,8rem", "1rem"]}
+          color={tertiary}
+          fontFamily={"Brush Script MT, Brush Script Std, cursive"}
+        >
           {"</img>"}
         </Text>
       </Box>

@@ -159,11 +159,10 @@ export const Projects = ({ color }) => {
                 p={"40px"}
                 border={`3px solid ${tertiary}`}
               >
-                These are some of the technologies i most frequently use to
-                build amazing things, I work with these on daily basis and have
-                a good understanding about them. I also work with various
-                packages, CSS libraries and team management tools which are
-                listed in{" "}
+                These are some of the tools that help me build amazing products.
+                I work with these on daily basis and have a good understanding
+                about them. <br />I also work with various packages, CSS
+                libraries and team management tools which are listed in{" "}
                 <Text
                   as="span"
                   color={"#2A9D8F"}
@@ -174,7 +173,9 @@ export const Projects = ({ color }) => {
                 >
                   my CV
                 </Text>
-                . I also have basic knowledge of MongoDB, Express and Node.js.
+                .
+                <br />I also have basic knowledge of MongoDB, Express and
+                Node.js.
               </Text>
               <Text
                 fontSize={"30rem"}
