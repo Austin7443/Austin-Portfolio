@@ -144,7 +144,7 @@ export const Projects = ({ color }) => {
           <Box w={"100%"}>
             <Flex justify={["center", "center", "flex-end"]}>
               <Text
-                fontSize={["1.3rem", "1.3rem", "1.5rem"]}
+                fontSize={["1rem", "1rem", "1.5rem"]}
                 color={secondary}
                 fontWeight={"semibold"}
               >

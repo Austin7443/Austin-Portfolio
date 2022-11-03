@@ -31,7 +31,7 @@ export const About = ({ color, marginLeft }) => {
           textAlign={["center", "center", "start"]}
         >
           <HStack
-            letterSpacing={-12}
+            letterSpacing={[-7, -7, -10]}
             justifyContent={["center", "center", "start"]}
           >
             <span id="shake">C</span>
@@ -47,7 +47,8 @@ export const About = ({ color, marginLeft }) => {
             </span>
             <span id="shake">o</span>
             <span id="shake">u</span>
-            <span id="shake">t!</span>
+            <span id="shake">t</span>
+            <span id="shake">!</span>
           </HStack>
         </Text>
         <Text
@@ -82,7 +83,7 @@ export const About = ({ color, marginLeft }) => {
           maxW={"500px"}
           //fontSize={"1.2rem"}
           color={primary}
-          ml={marginLeft}
+          ml={["15px", "15px", marginLeft]}
           fontSize={["15px", "16px", "19px"]}
         >
           I'm a sessioned frontend developer who have been passionate about the

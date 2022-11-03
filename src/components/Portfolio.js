@@ -87,7 +87,7 @@ export const Portfolio = ({ color, marginLeft }) => {
               maxW={"800px"}
               fontSize={["15px", "16px", "19px"]}
               color={primary}
-              ml={marginLeft}
+              ml={["15px", "15px", "0"]}
             >
               A small gallery of some projects I have worked on. I built some
               alone and others I built with some amazing developers. I'll keep
@@ -117,7 +117,7 @@ export const Portfolio = ({ color, marginLeft }) => {
             aria-label="See more"
             fontSize={["15px", "16px", "19px"]}
             fontWeight={"light"}
-            ml={[marginLeft, marginLeft, 0]}
+            ml={["15px", "15px", "0"]}
             color={secondary}
             border={"2px solid #2A9D8F"}
             borderRadius={"none"}
