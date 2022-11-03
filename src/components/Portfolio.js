@@ -115,14 +115,14 @@ export const Portfolio = ({ color, marginLeft }) => {
           <Button
             id="button"
             aria-label="See more"
-            fontSize={"1.2rem"}
+            fontSize={["15px", "16px", "19px"]}
             fontWeight={"light"}
             color={secondary}
             border={"2px solid #2A9D8F"}
             borderRadius={"none"}
             bg={"transparent"}
             size={"lg"}
-            w={"250px"}
+            w={["100%", "100%", "250px"]}
             onClick={() => {
               navigate("/project");
             }}

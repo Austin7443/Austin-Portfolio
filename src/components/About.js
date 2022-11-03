@@ -38,11 +38,11 @@ export const About = ({ color, marginLeft }) => {
             <span id="shake">h</span>
             <span id="shake">e</span>
             <span id="shake">c</span>
-            <span id="shake" style={{ paddingRight: "20px" }}>
+            <span id="shake" style={{ paddingRight: "14px" }}>
               k
             </span>
             <span id="shake">m</span>
-            <span id="shake" style={{ paddingRight: "20px" }}>
+            <span id="shake" style={{ paddingRight: "14px" }}>
               e
             </span>
             <span id="shake">o</span>
