@@ -35,7 +35,7 @@ export const Intro = ({ marginLeft, color }) => {
           lineHeight={1}
           letterSpacing={[-1.5, -1.5, -6.5]}
           ml={marginLeft}
-          fontSize={["2.7rem", "2.9rem", "7rem"]}
+          fontSize={["2.5rem", "2.8rem", "7rem"]}
           fontWeight={"bold"}
           color={"#FBFBFB" || "#FFFFFF"}
           py={["15px", "15px", "5px"]}
