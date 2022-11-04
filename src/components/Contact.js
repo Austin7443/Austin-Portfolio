@@ -205,18 +205,22 @@ export const Contact = ({ color }) => {
           </Text>
         </Box>
         <Box display={["none", "none", "block"]}>
-          <Stack spacing={36}>
+          <Stack>
             <a href="mailto:austin7443@gmail.com">
               <Text
                 className="mail"
                 fontSize={"1.5rem"}
                 mb={["20px"]}
-                mr={["0", "0", "0", "-20px"]}
+                //mr={["0", "0", "0", "-20px"]}
                 id="shake"
               >
                 austin7443@gmail.com
               </Text>
-              <Box borderRight={`2px solid ${secondary}`} h={"140px"}></Box>
+              <Box
+                borderLeft={`2px solid ${secondary}`}
+                h={"140px"}
+                ml={["0", "0", "12px", "16px"]}
+              ></Box>
             </a>
           </Stack>
         </Box>
