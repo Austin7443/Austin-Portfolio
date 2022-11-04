@@ -219,7 +219,7 @@ export const Contact = ({ color }) => {
               <Box
                 borderLeft={`2px solid ${secondary}`}
                 h={"140px"}
-                ml={["0", "0", "12px", "16px"]}
+                ml={["0", "0", "16px", "16px"]}
               ></Box>
             </a>
           </Stack>
