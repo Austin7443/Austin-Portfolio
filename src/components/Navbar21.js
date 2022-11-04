@@ -78,31 +78,31 @@ export const Navbar21 = () => {
             _hover={{ color: "#2A9D8F" }}
           >
             <Divider style={{ color: "black" }} />
-            <Box py={["5px", "5px", "0px"]}>
+            <Box py={["7px", "7px", "0px"]}>
               <a href="/" className="home">
                 <ListItem className="pad">Home</ListItem>
               </a>
             </Box>
             <Divider style={{ color: "black" }} />
-            <Box py={["5px", "5px", "0px"]}>
+            <Box py={["7px", "7px", "0px"]}>
               <a href="#about" className="about">
                 <ListItem className="pad">About</ListItem>
               </a>
             </Box>
             <Divider style={{ color: "black" }} />
-            <Box py={["5px", "5px", "0px"]}>
+            <Box py={["7px", "7px", "0px"]}>
               <a href="#projects" className="projects">
                 <ListItem className="pad">Projects</ListItem>
               </a>
             </Box>
             <Divider style={{ color: "black" }} />
-            <Box py={["5px", "5px", "0px"]}>
+            <Box py={["7px", "7px", "0px"]}>
               <a href="#contact" className="contact">
                 <ListItem className="pad">Contact</ListItem>
               </a>
             </Box>
             <Divider style={{ color: "black" }} />
-            <Box py={["5px", "5px", "0px"]}>
+            <Box py={["7px", "7px", "0px"]}>
               <a href="https://austin-cv.netlify.app/" className="resume">
                 <Button
                   id="button"

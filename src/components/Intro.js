@@ -35,7 +35,7 @@ export const Intro = ({ marginLeft, color }) => {
           lineHeight={1}
           letterSpacing={[-1.5, -1.5, -6.5]}
           ml={marginLeft}
-          fontSize={["2.5rem", "2.8rem", "7rem"]}
+          fontSize={["2.5rem", "2.8rem", "5rem", "7rem"]}
           fontWeight={"bold"}
           color={"#FBFBFB" || "#FFFFFF"}
           py={["15px", "15px", "5px"]}
@@ -95,7 +95,7 @@ export const Intro = ({ marginLeft, color }) => {
             mb={["100px"]}
             ml={[marginLeft]}
             size={"lg"}
-            w={["220px","230px", "270px"]}
+            w={["220px", "230px", "270px"]}
             zIndex={20}
             alignItems={"center"}
           >

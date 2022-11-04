@@ -75,7 +75,7 @@ export const Contact = ({ color }) => {
           </Text>
           <Text
             lineHeight={0.8}
-            fontSize={["2rem", "2.5rem", "6rem"]}
+            fontSize={["2rem", "2.5rem", "4rem", "6rem"]}
             fontWeight={"semibold"}
             color={secondary || "#FFFFFF"}
             textAlign={"center"}
