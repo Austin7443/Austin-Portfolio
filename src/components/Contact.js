@@ -11,7 +11,7 @@ import {
 export const Contact = ({ color }) => {
   const { primary, secondary, tertiary } = color;
   return (
-    <Box mt={"100px"} className="reveal" position={"relative"}>
+    <Box mt={"100px"} className="reveal" position={"relative"} mb={"-100px"}>
       <Flex
         color={secondary}
         align={"end"}
@@ -211,7 +211,7 @@ export const Contact = ({ color }) => {
                 className="mail"
                 fontSize={"1.5rem"}
                 mb={["20px"]}
-                mr={["-20px"]}
+                mr={["0", "0", "0", "-20px"]}
                 id="shake"
               >
                 austin7443@gmail.com
