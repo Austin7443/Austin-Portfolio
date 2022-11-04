@@ -10,7 +10,7 @@ export const Intro = ({ marginLeft, color }) => {
         position={"absolute"}
         zIndex={10}
         background={"transparent"}
-        h={["75vh", "85vh", "100%", "100%"]}
+        h={["65vh", "75vh", "100%", "100%"]}
       >
         <Span />
       </Box>
@@ -85,7 +85,7 @@ export const Intro = ({ marginLeft, color }) => {
           <Button
             id="button"
             aria-label="Contact me"
-            fontSize={["0.8rem", "0.9rem", "1.2rem"]}
+            fontSize={["0.9rem", "0.9rem", "1.2rem"]}
             fontWeight={"light"}
             color={"#2A9D8F"}
             border={"2px solid #2A9D8F"}
@@ -95,7 +95,7 @@ export const Intro = ({ marginLeft, color }) => {
             mb={["100px"]}
             ml={[marginLeft]}
             size={"lg"}
-            w={["230px","235px", "270px"]}
+            w={["220px","230px", "270px"]}
             zIndex={20}
             alignItems={"center"}
           >

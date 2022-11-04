@@ -83,23 +83,25 @@ export const About = ({ color, marginLeft }) => {
         </Text>
         <Text
           maxW={"500px"}
-          //fontSize={"1.2rem"}
           color={primary}
           ml={["15px", "15px", marginLeft]}
-          fontSize={["15px", "16px", "19px"]}
+          fontSize={["16px", "16px", "19px"]}
         >
           I'm a sessioned frontend developer who have been passionate about the
           web and building user-friendly product from the day I found out about
           it using the latest development principles and techniques. <br />
+          <br />
           For over a year now, I've had the opportunity to learn from and work
           with other really cool developers which has led me horn my skill and
           has kept pushing me to get to the peak of my career.
+          <br />
           <br />
           I currently work as a frontend developer with Zealight innovation lab
           in Lagos, Nigeria. where i work in close collaboration with both the
           frontend team mates and other teams like the product design team,
           backend team and marketing team to achieve user friendly products.
-          <br /> Want to know more about me and how I can help you?{" "}
+          <br />
+          Want to know more about me and how I can help you?{" "}
           <Text as="span" color={secondary} cursor={"pointer"}>
             {" "}
             <a href="mailto:austin7443@gmail.com"> Say hi!</a>

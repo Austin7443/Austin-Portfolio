@@ -166,7 +166,7 @@ export const Projects = ({ color }) => {
                 maxW={["600px"]}
                 p={"40px"}
                 border={`3px solid ${tertiary}`}
-                fontSize={["14px", "14px", "16px"]}
+                fontSize={["15px", "15px", "17px"]}
               >
                 These are some of the tools that help me build amazing products.
                 I work with these on daily basis and have a good understanding

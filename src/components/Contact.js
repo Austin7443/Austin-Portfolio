@@ -128,7 +128,7 @@ export const Contact = ({ color }) => {
                 >
                   You can reach out to me through any of my contact options, my
                   inbox is always open. Whether you have a question or just want
-                  to say hi, I’ll try my best to get back to you!
+                  to say hi, I’ll get back to you ASAP!
                 </Text>
                 <Button
                   w={"200px"}
@@ -189,7 +189,7 @@ export const Contact = ({ color }) => {
             </Flex>
           </Box>
           <Text
-            fontSize={["0.7rem", "0,7rem", "1rem"]}
+            fontSize={["0.8rem", "0,8rem", "1rem"]}
             color={secondary}
             textAlign={"center"}
             py={["10px", "10px", "0"]}

@@ -87,7 +87,7 @@ export const Portfolio = ({ color, marginLeft }) => {
             </Box>
             <Text
               maxW={"800px"}
-              fontSize={["15px", "16px", "19px"]}
+              fontSize={["16px", "16px", "19px"]}
               color={primary}
               ml={["15px", "15px", marginLeft]}
             >
