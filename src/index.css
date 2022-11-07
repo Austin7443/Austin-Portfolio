@@ -127,7 +127,7 @@
   width: 150px;
   height: 150px;
   border-radius: 50%;
-  transform: rotate(-15deg);
+  /* transform: rotate(-15deg); */
 }
 #tools {
   position: relative;
@@ -254,9 +254,10 @@
   transition: 0s;
   transform: scale(1);
 }
-#dp {
+/* #dp {
   transform: rotate(-9deg);
-}
+  opacity: 70%;
+} */
 .mail {
   writing-mode: vertical-lr;
 }

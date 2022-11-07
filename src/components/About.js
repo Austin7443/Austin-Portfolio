@@ -1,6 +1,6 @@
 import React from "react";
 import { Box, Flex, HStack, Image, Text } from "@chakra-ui/react";
-import profile from "./images/dp.jpeg";
+import profile from "./images/pic.jpeg";
 
 export const About = ({ color, marginLeft }) => {
   const { primary, secondary, tertiary } = color;
@@ -87,7 +87,7 @@ export const About = ({ color, marginLeft }) => {
           ml={["15px", "15px", marginLeft]}
           fontSize={["16px", "16px", "19px"]}
         >
-          I'm a sessioned frontend developer who have been passionate about the
+          I'm a seasoned frontend developer who have been passionate about the
           web and building user-friendly product from the day I found out about
           it using the latest development principles and techniques. <br />
           <br />
@@ -119,9 +119,13 @@ export const About = ({ color, marginLeft }) => {
         id="dp"
         src={profile}
         alt="profile image"
-        maxW={"400px"}
+        //maxW={"400px"}
+        w={["350px", "400px", "500px"]}
+        h={["350px", "400px", "500px"]}
+        borderRadius={"100%"}
         className="reveal"
-        p={["50px", "0px", ""]}
+        opacity={["90%"]}
+        p={["20px", "0px", ""]}
         loading="lazy"
       />
     </Flex>

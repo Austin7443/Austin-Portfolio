@@ -10,7 +10,7 @@ import bootstrap from "./images/291791_bootstrap_icon.png";
 import react from "./images/7423887_react_react native_icon.png";
 import git from "./images/git.png";
 import java from "./images/308441_front-end_javascript_js_long shadow_markup language_icon.png";
-import profile from "./images/profile.jpg";
+import profile from "./images/pic.jpeg";
 import { Link } from "react-router-dom";
 
 export const Projects = ({ color }) => {
