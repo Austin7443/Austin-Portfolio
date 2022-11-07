@@ -125,7 +125,7 @@ export const Portfolio = ({ color, marginLeft }) => {
             borderRadius={"none"}
             bg={"transparent"}
             size={"lg"}
-            w={["95%", "95%", "250px"]}
+            w={["95%", "95%", "250px", "250px"]}
             onClick={() => {
               navigate("/project");
             }}
