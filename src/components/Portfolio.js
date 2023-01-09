@@ -13,7 +13,7 @@ export const Portfolio = ({ color, marginLeft }) => {
   const navigate = useNavigate();
   const { primary, secondary, tertiary } = color;
   return (
-    <Box id="projects" className={window.visualViewport > "700px" ? "reveal" : null}>
+    <Box id="projects">
       <Box>
         <Flex
           align={["center", "center", "flex-end"]}
@@ -144,7 +144,7 @@ export const Portfolio = ({ color, marginLeft }) => {
         >
           {"<img>"}
         </Text>
-        <Flex w={"100%"} justify={"center"}>
+        <Flex w={"100%"} justify={"center"} className="reveal">
           <Grid
             templateColumns={[
               "repeat(1, 1fr)",

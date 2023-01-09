@@ -1,6 +1,6 @@
 import { Box, Button, Flex, HStack, Stack, Text } from "@chakra-ui/react";
 import React from "react";
-import { BsGithub } from "react-icons/bs";
+import { BsFillArrowUpSquareFill, BsGithub } from "react-icons/bs";
 import { FaWhatsapp } from "react-icons/fa";
 import {
   AiOutlineLinkedin,
@@ -10,6 +10,12 @@ import {
 
 export const Contact = ({ color }) => {
   const { primary, secondary, tertiary } = color;
+
+
+   const scrollToTop = () => {
+     window.scrollTo(0, 0);
+   };
+
   return (
     <Box mt={"100px"} className="reveal" position={"relative"} mb={"-100px"}>
       <Flex
@@ -225,6 +231,15 @@ export const Contact = ({ color }) => {
           </Stack>
         </Box>
       </Flex>
+
+        <Flex
+          justify={"flex-end"}
+          mt={"70px"}
+          cursor="pointer"
+          onClick={scrollToTop}
+        >
+          <BsFillArrowUpSquareFill color={"#2A9D8F"} size={"2rem"} />
+        </Flex>
     </Box>
   );
 };
