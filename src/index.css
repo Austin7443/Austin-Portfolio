@@ -290,6 +290,11 @@
     width: 250px;
   }
 }
+@media (max-width: 600px) {
+  #button:hover {
+  box-shadow: inset 400px 0 0 0 #2a9d8f;
+}
+}
 #all {
   width: 100%;
   display: flex;

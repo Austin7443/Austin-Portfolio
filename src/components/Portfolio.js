@@ -13,7 +13,7 @@ export const Portfolio = ({ color, marginLeft }) => {
   const navigate = useNavigate();
   const { primary, secondary, tertiary } = color;
   return (
-    <Box id="projects" className={"reveal"}>
+    <Box id="projects" className={window.visualViewport > "700px" ? "reveal" : null}>
       <Box>
         <Flex
           align={["center", "center", "flex-end"]}
@@ -119,7 +119,9 @@ export const Portfolio = ({ color, marginLeft }) => {
             aria-label="See more"
             fontSize={["15px", "16px", "19px"]}
             fontWeight={"light"}
-            ml={["15px", "15px", "0"]}
+            //ml={["15px", "15px", "0"]}
+            display={"flex"}
+            justify={["center", null, null]}
             color={secondary}
             border={"2px solid #2A9D8F"}
             borderRadius={"none"}

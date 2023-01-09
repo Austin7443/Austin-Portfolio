@@ -35,7 +35,7 @@ export const Navbar21 = () => {
 
   return (
     <>
-      <nav className="navbar">
+      <nav className="navbar" overflowX={"hidden"}>
         <HStack fontWeight={"semibold"} className="logo">
           <FaSoundcloud size={["2.5rem"]} color={"#2A9D8F"} />
           <Text color={"#FFFFFF"} fontSize={["1rem", "1rem", "1.2rem"]}>
@@ -80,7 +80,7 @@ export const Navbar21 = () => {
             <Divider style={{ color: "black" }} />
             <Box py={["7px", "7px", "0px"]}>
               <a href="/" className="home">
-                <ListItem className="pad">Home</ListItem>
+                <ListItem className="pad" title="Home!!">Home</ListItem>
               </a>
             </Box>
             <Divider style={{ color: "black" }} />
