@@ -75,7 +75,7 @@ export const Navbar21 = () => {
             direction={["column", "column", "row", "row"]}
             fontWeight={["medium", "medium", "semibold"]}
             borderBottom={["1px solid #808080", "none", "none"]}
-            _hover={{ color: "#2A9D8F" }}
+           // _hover={{ color: "#2A9D8F" }}
           >
             <Divider style={{ color: "black" }} />
             <Box py={["7px", "7px", "0px"]}>

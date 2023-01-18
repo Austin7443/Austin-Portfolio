@@ -1,7 +1,7 @@
 import React from "react";
 import { Box, Button, Flex, Grid, HStack, Image, Text } from "@chakra-ui/react";
-// import img1 from "./images/img22.png";
-// import img2 from "./images/img33.png";
+import img1 from "./images/img22.png";
+import img2 from "./images/img33.png";
 import img3 from "./images/img00.jpeg";
 import img4 from "./images/img66.jpeg";
 import img5 from "./images/img55.jpeg";
@@ -14,7 +14,9 @@ export const Portfolio = ({ color, marginLeft }) => {
   const { primary, secondary, tertiary } = color;
   return (
     <Box id="projects">
-      <Box>
+      <Box 
+      position={"relative"}
+      >
         <Flex
           align={["center", "center", "flex-end"]}
           direction={["column", "column", "row"]}
@@ -33,7 +35,7 @@ export const Portfolio = ({ color, marginLeft }) => {
               fontWeight={"extrabold"}
               color={"#929292"}
               position={"absolute"}
-              zIndex={-2}
+              //zIndex={-2}
               top={"-12%"}
               left={"40%"}
               letterSpacing={"-50px"}
@@ -236,17 +238,17 @@ export const data = [
     alt: "Project Image",
     link: "/",
   },
-  // {
-  //   images: img2,
-  //   alt: "Project Image",
-  //   link: "https://v1-patient-howbodi.netlify.app/",
-  // },
+  {
+    images: img2,
+    alt: "Project Image",
+    link: "https://v1-patient-howbodi.netlify.app/",
+  },
 
-  // {
-  //   images: img1,
-  //   alt: "Project Image",
-  //   link: "https://water-management.netlify.app/",
-  // },
+  {
+    images: img1,
+    alt: "Project Image",
+    link: "https://water-management.netlify.app/",
+  },
   {
     images: img4,
     alt: "Project Image",

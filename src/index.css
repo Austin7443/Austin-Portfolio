@@ -92,6 +92,7 @@
 }
 
 .pad:hover {
+  color: #2a9d8f;
   border-bottom: 4px solid #2a9d8f;
   border-radius: 4px;
 }
