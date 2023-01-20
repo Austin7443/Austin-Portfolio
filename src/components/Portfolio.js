@@ -6,6 +6,7 @@ import img3 from "./images/img00.jpeg";
 import img4 from "./images/img66.jpeg";
 import img5 from "./images/img55.jpeg";
 import img6 from "./images/img77.jpeg";
+import img8 from "./images/img88.png";
 import { FiGithub, FiExternalLink } from "react-icons/fi";
 import { useNavigate } from "react-router-dom";
 
@@ -248,6 +249,11 @@ export const data = [
     images: img1,
     alt: "Project Image",
     link: "https://water-management.netlify.app/",
+  },
+  {
+    images: img8,
+    alt: "Project Image",
+    link: "https://www.jojoloapp.com/",
   },
   {
     images: img4,
