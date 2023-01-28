@@ -10,28 +10,28 @@ import {
   Flex,
   Divider,
 } from "@chakra-ui/react";
-import audio from "../components/audio.mp3";
+//import audio from "../components/audio.mp3";
 import { FaSoundcloud } from "react-icons/fa";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { MdClose } from "react-icons/md";
 import "../index.css";
 
-const media = new Audio(audio);
-media.controls = true;
-media.loop = true
+// const media = new Audio(audio);
+// media.controls = true;
+// media.loop = true
 
 export const Navbar21 = () => {
-  const [toggle, setToggle] = useState(false);
-  const [mobile, setMobile] = useState(false);
+  // const [toggle, setToggle] = useState(false);
+   const [mobile, setMobile] = useState(false);
 
-  const playAudio = () => {
-    setToggle(!toggle);
-    if (media.paused) {
-      media.play();
-    } else {
-      media.pause();
-    }
-  }
+  // const playAudio = () => {
+  //   setToggle(!toggle);
+  //   if (media.paused) {
+  //     media.play();
+  //   } else {
+  //     media.pause();
+  //   }
+ // }
 
   return (
     <>
@@ -49,8 +49,8 @@ export const Navbar21 = () => {
             pb={"5px"}
           >
             <Switch
-              onChange={playAudio}
-              isChecked={toggle}
+              //onChange={playAudio}
+              //isChecked={toggle}
               colorScheme="teal"
               aria-label="Sound switch"
             />
@@ -61,7 +61,7 @@ export const Navbar21 = () => {
           className={mobile ? "nav-links-mobile" : "nav-links"}
           right={0}
           listStyleType={"none"}
-          onClick={() => setMobile(false)}
+          //onClick={() => setMobile(false)}
           fontSize={["1rem", "1rem", "1.3rem"]}
           overflowX={"hidden"}
           zIndex={2}
