@@ -157,10 +157,10 @@ export const Portfolio = ({ color, marginLeft }) => {
             ]}
             gap="1em"
           >
-            {data.map((data) => (
+            {data.map((data, i) => (
               <>
                 <Box
-                  key={data.images}
+                  key={i}
                   className="all"
                   cursor={"pointer"}
                   w={"100%"}
@@ -242,7 +242,7 @@ export const data = [
   {
     images: img2,
     alt: "Project Image",
-    link: "https://v1-patient-howbodi.netlify.app/",
+    link: "https://www.howbodi.io/",
   },
 
   {
