@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import {
   Text,
   HStack,
@@ -14,27 +14,45 @@ import audio from "../components/audio.mp3";
 import { FaSoundcloud } from "react-icons/fa";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { MdClose } from "react-icons/md";
+import ReactHowler from "react-howler";
+
 import "../index.css";
 
-const media = new Audio(audio);
-media.controls = true;
-media.loop = true
+// const media = new Audio(audio);
+// media.controls = true;
+// media.loop = true;
 
 export const Navbar21 = () => {
   const [toggle, setToggle] = useState(false);
-   const [mobile, setMobile] = useState(false);
+  const [mobile, setMobile] = useState(false);
 
   const playAudio = () => {
     setToggle(!toggle);
-    if (media.paused) {
-      media.play();
-    } else {
-      media.pause();
-    }
- }
+    // if (media.paused) {
+    //   media.play();
+    // } else {
+    //   media.pause();
+    // }
+  };
+
+  // useEffect(() => {
+  //   toggle ? media.play() : media.pause();
+  // }, [toggle]);
+
+  // useEffect(() => {
+  //   media.addEventListener("ended", () => setToggle(false));
+
+  //   return () => {
+  //     media.addEventListener("ended", () => setToggle(false));
+  //   };
+  // }, []);
 
   return (
     <>
+      <ReactHowler
+        src="http://goldfirestudios.com/proj/howlerjs/sound.ogg"
+        playing={toggle}
+      />
       <nav className="navbar" overflowX={"hidden"}>
         <HStack fontWeight={"semibold"} className="logo">
           <FaSoundcloud size={["2.5rem"]} color={"#2A9D8F"} />
@@ -75,12 +93,14 @@ export const Navbar21 = () => {
             direction={["column", "column", "row", "row"]}
             fontWeight={["medium", "medium", "semibold"]}
             borderBottom={["1px solid #808080", "none", "none"]}
-           // _hover={{ color: "#2A9D8F" }}
+            // _hover={{ color: "#2A9D8F" }}
           >
             <Divider style={{ color: "black" }} />
             <Box py={["7px", "7px", "0px"]}>
               <a href="/" className="home">
-                <ListItem className="pad" title="Home!!">Home</ListItem>
+                <ListItem className="pad" title="Home!!">
+                  Home
+                </ListItem>
               </a>
             </Box>
             <Divider style={{ color: "black" }} />
