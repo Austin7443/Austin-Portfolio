@@ -1,11 +1,10 @@
-import React from "react";
 import { Box, Text, Stack, Button, Flex } from "@chakra-ui/react";
 import { Span } from "./Span";
 
 export const Intro = ({ marginLeft, color }) => {
   const { secondary } = color;
   return (
-    <Box position={"relative"} cursor="pointer">
+    <Box position={"relative"} cursor="pointer" id="home" overflowX={"hidden"}>
       <Box
         position={"absolute"}
         zIndex={10}
@@ -26,7 +25,7 @@ export const Intro = ({ marginLeft, color }) => {
         <Text
           fontSize={["0.8rem", "0,8rem", "1rem"]}
           color={"#878787"}
-          pt={["0"]}
+          pt={["0px"]}
           fontFamily={"Brush Script MT, Brush Script Std, cursive"}
         >
           {"<h1>"}
@@ -39,6 +38,7 @@ export const Intro = ({ marginLeft, color }) => {
           fontWeight={"bold"}
           color={"#FBFBFB" || "#FFFFFF"}
           py={["15px", "15px", "5px"]}
+          // overflowX={["hidden", "hidden", "auto"]}
         >
           <Box zIndex={4}>
             <Text>Hi!</Text>
@@ -96,7 +96,7 @@ export const Intro = ({ marginLeft, color }) => {
             ml={[marginLeft]}
             size={"lg"}
             w={["220px", "230px", "270px"]}
-            zIndex={20}
+            zIndex={18}
             alignItems={"center"}
           >
             <a href="mailto:austin7443@gmail.com"> Contact me!</a>

@@ -1,4 +1,3 @@
-import React, { useEffect, useState } from "react";
 import {
   Text,
   HStack,
@@ -10,30 +9,35 @@ import {
   Flex,
   Divider,
 } from "@chakra-ui/react";
-import audio from "../components/audio.mp3";
+// import audio from "../components/audio.mp3";
 import { FaSoundcloud } from "react-icons/fa";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { MdClose } from "react-icons/md";
-import ReactHowler from "react-howler";
+// import ReactHowler from "react-howler";
 
-import "../index.css";
+// import "../index.css";
+import { useState } from "react";
 
 // const media = new Audio(audio);
 // media.controls = true;
 // media.loop = true;
 
 export const Navbar21 = () => {
-  const [toggle, setToggle] = useState(false);
+  // const [toggle, setToggle] = useState(false);
   const [mobile, setMobile] = useState(false);
 
-  const playAudio = () => {
-    setToggle(!toggle);
+  function scrollToTop() {
+    window.scroll(0, 0)
+  }
+
+  // const playAudio = () => {
+  //   setToggle(!toggle);
     // if (media.paused) {
     //   media.play();
     // } else {
     //   media.pause();
     // }
-  };
+  // };
 
   // useEffect(() => {
   //   toggle ? media.play() : media.pause();
@@ -49,11 +53,11 @@ export const Navbar21 = () => {
 
   return (
     <>
-      <ReactHowler
-        src="http://goldfirestudios.com/proj/howlerjs/sound.ogg"
-        playing={toggle}
-      />
-      <nav className="navbar" overflowX={"hidden"}>
+      {/*<ReactHowler
+        //src="http://goldfirestudios.com/proj/howlerjs/sound.ogg"
+        // playing={toggle}
+  />*/}
+      <nav className="navbar">
         <HStack fontWeight={"semibold"} className="logo">
           <FaSoundcloud size={["2.5rem"]} color={"#2A9D8F"} />
           <Text color={"#FFFFFF"} fontSize={["1rem", "1rem", "1.2rem"]}>
@@ -67,11 +71,15 @@ export const Navbar21 = () => {
             pb={"5px"}
           >
             <Switch
-              onChange={playAudio}
-              isChecked={toggle}
+              // onChange={playAudio}
+              // isChecked={toggle}
               colorScheme="teal"
               aria-label="Sound switch"
             />
+            {/* <label class="switch">
+              <input type="checkbox" checked={toggle} onChange={playAudio} />
+              <span class="slider round"></span>
+</label> */}
           </Box>
         </HStack>
         <UnorderedList
@@ -96,12 +104,14 @@ export const Navbar21 = () => {
             // _hover={{ color: "#2A9D8F" }}
           >
             <Divider style={{ color: "black" }} />
-            <Box py={["7px", "7px", "0px"]}>
-              <a href="/" className="home">
-                <ListItem className="pad" title="Home!!">
-                  Home
-                </ListItem>
-              </a>
+            <Box
+              py={["7px", "7px", "0px"]}
+              className="home"
+              onClick={scrollToTop}
+            >
+              <ListItem className="pad" title="Home">
+                Home
+              </ListItem>
             </Box>
             <Divider style={{ color: "black" }} />
             <Box py={["7px", "7px", "0px"]}>

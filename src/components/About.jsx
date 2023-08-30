@@ -1,4 +1,3 @@
-import React from "react";
 import { Box, Flex, HStack, Image, Text } from "@chakra-ui/react";
 import profile from "./images/pic.jpeg";
 
@@ -10,11 +9,11 @@ export const About = ({ color, marginLeft }) => {
       align={"center"}
       mt={"100px"}
       w={"100%"}
-      justify={"space-around"}
+      justify={"space-between"}
       id="about"
-      direction={["column", "column", "column", "row"]}
+      direction={["column", "column", "row"]}
     >
-      <Box bg={""} className="reveal">
+      <Box w={["100%", "100%", "50%"]} className="reveal">
         <Text
           fontSize={["0.8rem", "0,8rem", "1rem"]}
           color={tertiary}
@@ -22,7 +21,7 @@ export const About = ({ color, marginLeft }) => {
         >
           {"<h2>"}
         </Text>
-        <Text
+        <Box
           lineHeight={0.8}
           ml={[0, 0, marginLeft]}
           fontSize={["2rem", "2.5rem", "4rem", "6rem"]}
@@ -50,25 +49,26 @@ export const About = ({ color, marginLeft }) => {
             <span id="shake">t</span>
             <span id="shake">!</span>
           </HStack>
-        </Text>
+        </Box>
         <Text
           fontSize={["0.8rem", "0,8rem", "1rem"]}
-          lineHeight={[0.7, 0.7, ""]}
+          lineHeight={[0.7, 0.7, 0]}
           color={tertiary}
           fontFamily={"Brush Script MT, Brush Script Std, cursive"}
         >
           {"<h2>"}
         </Text>
         <Text
-          fontSize={"24rem"}
+          fontSize={["10rem", "10rem", "13rem", "20rem", "24rem"]}
           fontWeight={"extrabold"}
           color={"#929292"}
           position={"absolute"}
           zIndex={-2}
           top={"45%"}
-          right={["-170%", "-100%", "-90%"]}
+          //right={["-170%", "-100%", "-90%"]}
           letterSpacing={"-30px"}
           opacity={"20%"}
+          display={["none", "none", "block"]}
         >
           TOOLS
         </Text>
@@ -82,7 +82,7 @@ export const About = ({ color, marginLeft }) => {
           {"<p>"}
         </Text>
         <Text
-          maxW={"500px"}
+          // maxW={["700px", "", "500px"]}
           color={primary}
           ml={["15px", "15px", marginLeft]}
           fontSize={["16px", "16px", "19px"]}
@@ -115,19 +115,20 @@ export const About = ({ color, marginLeft }) => {
           {"</p>"}
         </Text>
       </Box>
-      <Image
-        id="dp"
-        src={profile}
-        alt="profile image"
-        //maxW={"400px"}
-        w={["350px", "400px", "500px"]}
-        h={["350px", "400px", "500px"]}
-        borderRadius={"100%"}
-        className="reveal"
-        opacity={["90%"]}
-        p={["20px", "0px", ""]}
-        loading="lazy"
-      />
+      <Box w={["100%", "100%", "50%"]} align="center">
+        <Image
+          // id="dp"
+          src={profile}
+          alt="profile image"
+          w={["350px", "400px", "400px", "400px"]}
+          h={["350px", "400px", "400px", "400px"]}
+          borderRadius={"100%"}
+          className="reveal"
+          opacity={["90%"]}
+          p={["20px", "0px", "0px"]}
+          loading="lazy"
+        />
+      </Box>
     </Flex>
   );
 };

@@ -1,7 +1,6 @@
 import { Box, Flex, Grid, HStack, Image, Text } from '@chakra-ui/react'
-import React from 'react'
-import { data } from '../components/Portfolio';
 import { FiGithub, FiExternalLink } from "react-icons/fi";
+import { data } from '../components/ProjectData';
 
 export const Project = ({ color }) => {
   const { secondary } = color;
@@ -15,20 +14,20 @@ export const Project = ({ color }) => {
             "repeat(1, 1fr)",
             "repeat(1, 1fr)",
             "repeat(2, 1fr)",
-            "repeat(3, 1fr)",
+            "repeat(2, 1fr)",
           ]}
           gap="1em"
         >
-          {data.map((data, i) => (
+          {data.map((data) => (
             <>
               <Box className="all" cursor={"pointer"} w={"100%"}>
                 <Box className="card">
                   <Box className="face front">
                     <Image
-                      src={data.images}
-                      alt={data.alt}
-                      key={i}
-                      w={["100%", "100%", "400px"]}
+                      src={data?.images}
+                      alt={data?.alt}
+                      key={data?.images}
+                      // w={["100%", "100%", "400px"]}
                       h={"100%"}
                       loading="lazy"
                     />

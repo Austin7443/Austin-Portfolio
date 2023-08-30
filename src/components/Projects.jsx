@@ -1,5 +1,4 @@
 import { Box, Flex, HStack, Image, Text } from "@chakra-ui/react";
-import React from "react";
 import { FiGithub } from "react-icons/fi";
 import { FiExternalLink } from "react-icons/fi";
 import "../index.css";
@@ -193,8 +192,9 @@ export const Projects = ({ color }) => {
                 position={"absolute"}
                 zIndex={-2}
                 top={"90%"}
-                left={["30%", "40%", "60%"]}
+                left={["30%", "30%", "30%", "50%"]}
                 opacity={"20%"}
+                display={["none", "none", "block"]}
               >
                 Hi
               </Text>

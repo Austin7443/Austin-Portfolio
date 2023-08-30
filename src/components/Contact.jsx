@@ -1,5 +1,4 @@
 import { Box, Button, Flex, HStack, Stack, Text } from "@chakra-ui/react";
-import React from "react";
 import { BsFillArrowUpSquareFill, BsGithub } from "react-icons/bs";
 import { FaWhatsapp } from "react-icons/fa";
 import {
@@ -11,13 +10,11 @@ import {
 export const Contact = ({ color }) => {
   const { primary, secondary, tertiary } = color;
 
-
-   const scrollToTop = () => {
-     window.scrollTo(0, 0);
-   };
-
+ function scrollToTop() {
+   window.scrollTo(0, 0);
+ }
   return (
-    <Box mt={"100px"} className="reveal" position={"relative"} mb={"-100px"}>
+    <Box mt={"100px"} className="reveal" position={"relative"}>
       <Flex
         color={secondary}
         align={"end"}
@@ -79,7 +76,7 @@ export const Contact = ({ color }) => {
           >
             {"<h2>"}
           </Text>
-          <Text
+          <Box
             lineHeight={0.8}
             fontSize={["2rem", "2.5rem", "4rem", "6rem"]}
             fontWeight={"semibold"}
@@ -103,7 +100,7 @@ export const Contact = ({ color }) => {
               <span id="shake">c</span>
               <span id="shake">h</span>
             </HStack>
-          </Text>
+          </Box>
           <Text
             fontSize={["0.8rem", "0,8rem", "1rem"]}
             lineHeight={[0.5, 0.5, ""]}

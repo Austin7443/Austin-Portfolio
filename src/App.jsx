@@ -3,7 +3,7 @@ import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import { Project } from "./pages/Project";
 import { Home } from "./pages/Home";
 import "./index.css";
-import { Navbar21 } from "./components/Navbar21";
+import Nav from "./components/NavE";
 
 function App() {
   const color = {
@@ -33,11 +33,10 @@ function App() {
   window.scroll(0, 0);
 
   return (
-    <Box overflowX={"hidden"} maxW={"1500px"} mx={"auto"}>
+    <Box maxW={"1500px"} mx={"auto"} w={"100% !important"}>
       <Router>
-        <Navbar21 color={color} />
-
-        <Box>
+        <Nav color={color} />
+        <>
           <Routes>
             <Route path="*" element={<Home />} />
             <Route index element={<Home />} />
@@ -51,7 +50,7 @@ function App() {
           >
             {"<html>"}
           </Text>
-        </Box>
+        </>
       </Router>
     </Box>
   );
