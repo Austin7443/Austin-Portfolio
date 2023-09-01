@@ -1,3 +1,6 @@
+/* eslint-disable react/prop-types */
+/* eslint-disable react/no-unescaped-entities */
+
 import { Box } from "@chakra-ui/react";
 import { About } from "../components/About";
 import { Contact } from "../components/Contact";
@@ -5,6 +8,7 @@ import { Intro } from "../components/Intro";
 import { Portfolio } from "../components/Portfolio";
 import { Projects } from "../components/Projects";
 import "../index.css";
+import { useEffect } from "react";
 
 export const Home = () => {
   const color = {
@@ -13,6 +17,20 @@ export const Home = () => {
     tertiary: "#808080",
   };
   const marginLeft = "30px";
+
+  useEffect(() => {
+    if (window.location.hash) {
+      const sectionId = window.location.hash.substring(1);
+      scrollToSection(sectionId);
+    }
+  }, []);
+
+  const scrollToSection = (sectionId) => {
+    const section = document.getElementById(sectionId);
+    if (section) {
+      section.scrollIntoView({ behavior: "smooth" });
+    }
+  };
 
   return (
     <Box

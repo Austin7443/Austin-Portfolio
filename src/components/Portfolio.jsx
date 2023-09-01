@@ -1,3 +1,5 @@
+/* eslint-disable react/prop-types */
+/* eslint-disable react/no-unescaped-entities */
 import { Box, Button, Flex, Grid, HStack, Image, Text } from "@chakra-ui/react";
 import { FiGithub, FiExternalLink } from "react-icons/fi";
 import { useNavigate } from "react-router-dom";
@@ -8,12 +10,12 @@ export const Portfolio = ({ color, marginLeft }) => {
   const { primary, secondary, tertiary } = color;
   return (
     <Box id="projects">
-      <Box position={"relative"}>
+      <Box position={"relative"} className="reveal">
         <Flex
           align={["center", "center", "flex-end"]}
           direction={["column", "column", "row"]}
         >
-          <Box bg={""} w={"100%"}>
+          <Box w={"100%"}>
             <Text
               fontSize={["0.8rem", "0,8rem", "1rem"]}
               color={tertiary}
@@ -28,7 +30,6 @@ export const Portfolio = ({ color, marginLeft }) => {
               color={"#929292"}
               position={"absolute"}
               top={["10%", "10%", "-3%", "-12%"]}
-              // left={"40%"}
               letterSpacing={"-40px"}
               opacity={"20%"}
               display={["none", "none", "block"]}
@@ -143,7 +144,7 @@ export const Portfolio = ({ color, marginLeft }) => {
             "repeat(1, 1fr)",
             "repeat(1, 1fr)",
             "repeat(2, 1fr)",
-            "repeat(2, 1fr)",
+            "repeat(3, 1fr)",
           ]}
           w={"100%"}
           gap="1em"
@@ -156,8 +157,6 @@ export const Portfolio = ({ color, marginLeft }) => {
                   <Image
                     src={data?.images}
                     alt={data?.alt}
-                    // w={["90%", "90%", "90%", "90%", "100%"]}
-                    // w={"300px"}
                     h={"100%"}
                     className="reveal"
                     loading="lazy"

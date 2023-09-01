@@ -1,3 +1,5 @@
+/* eslint-disable react/prop-types */
+/* eslint-disable react/no-unescaped-entities */
 import { Box, Button, Flex, HStack, Stack, Text } from "@chakra-ui/react";
 import { BsFillArrowUpSquareFill, BsGithub } from "react-icons/bs";
 import { FaWhatsapp } from "react-icons/fa";
@@ -10,9 +12,9 @@ import {
 export const Contact = ({ color }) => {
   const { primary, secondary, tertiary } = color;
 
- function scrollToTop() {
-   window.scrollTo(0, 0);
- }
+  function scrollToTop() {
+    window.scrollTo(0, 0);
+  }
   return (
     <Box mt={"100px"} className="reveal" position={"relative"}>
       <Flex
@@ -229,14 +231,14 @@ export const Contact = ({ color }) => {
         </Box>
       </Flex>
 
-        <Flex
-          justify={"flex-end"}
-          mt={"70px"}
-          cursor="pointer"
-          onClick={scrollToTop}
-        >
-          <BsFillArrowUpSquareFill color={"#2A9D8F"} size={"2rem"} />
-        </Flex>
+      <Flex
+        justify={"flex-end"}
+        mt={"70px"}
+        cursor="pointer"
+        onClick={scrollToTop}
+      >
+        <BsFillArrowUpSquareFill color={"#2A9D8F"} size={"2rem"} />
+      </Flex>
     </Box>
   );
 };

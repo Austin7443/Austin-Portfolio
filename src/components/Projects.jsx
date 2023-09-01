@@ -1,3 +1,5 @@
+/* eslint-disable react/prop-types */
+/* eslint-disable react/no-unescaped-entities */
 import { Box, Flex, HStack, Image, Text } from "@chakra-ui/react";
 import { FiGithub } from "react-icons/fi";
 import { FiExternalLink } from "react-icons/fi";

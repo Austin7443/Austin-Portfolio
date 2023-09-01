@@ -36,7 +36,6 @@ function App() {
     <Box maxW={"1500px"} mx={"auto"} w={"100% !important"}>
       <Router>
         <Nav color={color} />
-        <>
           <Routes>
             <Route path="*" element={<Home />} />
             <Route index element={<Home />} />
@@ -50,7 +49,6 @@ function App() {
           >
             {"<html>"}
           </Text>
-        </>
       </Router>
     </Box>
   );

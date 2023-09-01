@@ -8,8 +8,6 @@ import {
   Text,
   useBreakpointValue,
 } from "@chakra-ui/react";
-import { Link } from "react-router-dom";
-// import logo from "../assets/logo.png";
 import { MdClear, MdMenu } from "react-icons/md";
 import { useEffect, useState } from "react";
 import "../App.css";
@@ -36,7 +34,7 @@ function Nav() {
       fontFamily={"Trenda-regular"}
     >
       <Flex w={["100%", "100%", "10%", "20%"]} align={["flex-start"]}>
-        <Link to="/">
+        <a href="/">
           <HStack fontWeight={"semibold"} className="logo">
             <FaSoundcloud size={["2.5rem"]} color={"#2A9D8F"} />
             <Text color={"#FFFFFF"} fontSize={["1rem", "1rem", "1.2rem"]}>
@@ -60,9 +58,9 @@ function Nav() {
 </label> */}
             </Box>
           </HStack>
-        </Link>
+        </a>
       </Flex>
-      <Box> 
+      <Box>
         <Stack
           w={"100%"}
           fontWeight={"bold"}
@@ -76,22 +74,22 @@ function Nav() {
           color={"#808080"}
         >
           <Text pr={["0px", "0px", "40px"]}>
-            <a href="#home" className="hova">
+            <a href="/" className="hova">
               Home
             </a>
           </Text>
           <Text pr={["0px", "0px", "40px"]}>
-            <a href="#about" className="hova">
+            <a href="/#about" className="hova">
               About
             </a>
           </Text>
           <Text pr={["0px", "0px", "40px"]}>
-            <a href="#projects" className="hova">
+            <a href="/#projects" className="hova">
               Projects
             </a>
           </Text>
           <Text pr={["0px", "0px", "40px"]}>
-            <a href="#contact" className="hova">
+            <a href="/#contact" className="hova">
               Contact
             </a>
           </Text>
@@ -114,7 +112,6 @@ function Nav() {
           <a href="https://austin-cv.netlify.app/">
             <Button
               id="button"
-              _hover={{ background: "#2A9D8F" }}
               fontSize={".9em"}
               bg={"transparent"}
               border={"2px solid #2A9D8F"}

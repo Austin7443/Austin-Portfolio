@@ -1,3 +1,5 @@
+/* eslint-disable react/prop-types */
+/* eslint-disable react/no-unescaped-entities */
 import { Box, Flex, HStack, Image, Text } from "@chakra-ui/react";
 import profile from "./images/pic.jpeg";
 
@@ -33,21 +35,15 @@ export const About = ({ color, marginLeft }) => {
             letterSpacing={[-7, -7, -10]}
             justifyContent={["center", "center", "start"]}
           >
-            <span id="shake">C</span>
-            <span id="shake">h</span>
-            <span id="shake">e</span>
-            <span id="shake">c</span>
-            <span id="shake" style={{ paddingRight: "14px" }}>
-              k
-            </span>
-            <span id="shake">m</span>
-            <span id="shake" style={{ paddingRight: "14px" }}>
-              e
-            </span>
+            <span id="shake">A</span>
+            <span id="shake">b</span>
             <span id="shake">o</span>
             <span id="shake">u</span>
-            <span id="shake">t</span>
-            <span id="shake">!</span>
+            <span id="shake" style={{ paddingRight: "15px" }}>
+              t
+            </span>
+            <span id="shake">M</span>
+            <span id="shake">e</span>
           </HStack>
         </Box>
         <Text
@@ -65,7 +61,6 @@ export const About = ({ color, marginLeft }) => {
           position={"absolute"}
           zIndex={-2}
           top={"45%"}
-          //right={["-170%", "-100%", "-90%"]}
           letterSpacing={"-30px"}
           opacity={"20%"}
           display={["none", "none", "block"]}
@@ -82,7 +77,6 @@ export const About = ({ color, marginLeft }) => {
           {"<p>"}
         </Text>
         <Text
-          // maxW={["700px", "", "500px"]}
           color={primary}
           ml={["15px", "15px", marginLeft]}
           fontSize={["16px", "16px", "19px"]}

@@ -1,24 +1,14 @@
 body {
   overflow-x: hidden !important;
 }
-
 html {
   scroll-behavior: smooth;
 }
-
 .hova {
   position: relative;
-  
 }
-.hova:hover::after {
-  content: "";
-  width: 60px;
-  height: 15px;
-  position: absolute;
-  border-bottom: 4px solid #2A9D8F;
-  border-radius: 5px;
-  bottom: -10px;
-  left: 0;
+.hova:hover {
+  color: #2a9d8f;
 }
 .reveal {
   position: relative;
@@ -26,12 +16,10 @@ html {
   opacity: 0;
   transition: 1s all ease;
 }
-
 .reveal.active {
   transform: translateY(0);
   opacity: 1;
 }
-
 @media screen and (max-width: 780px) {
   .logo {
     display: flex;
@@ -39,7 +27,6 @@ html {
     top: 15px;
     left: 35px;
   }
-
 }
 /* Bounce animation */
 #shake:hover {
@@ -62,17 +49,14 @@ html {
     transform: scale(1, 0.7);
   }
 }
-
 .pad:hover {
   color: #2a9d8f;
   border-bottom: 4px solid #2a9d8f;
   border-radius: 4px;
 }
-
 /* Animation */
 .text-wrapper {
   border-radius: 50%;
-  /* border: 1px solid red; */
   animation: animate 7s linear infinite;
 }
 .profileImg {
@@ -87,7 +71,6 @@ html {
   border-radius: 50%;
   animation: animate2 5s linear infinite;
 }
-
 @keyframes animate {
   from {
     transform: rotate(0deg);
@@ -96,7 +79,6 @@ html {
     transform: rotate(360deg);
   }
 }
-
 @keyframes animate2 {
   from {
     transform: rotate(45deg);
@@ -138,12 +120,12 @@ html {
   animation: bounce 3s steps(10) 1;
   animation-fill-mode: forwards;
 } */
-@keyframes bounce {
+/* @keyframes bounce {
   100% {
     left: 100%;
   }
-}
-#portfolio {
+} */
+/* #portfolio {
   position: relative;
 }
 #portfolio::after {
@@ -160,7 +142,7 @@ html {
   100% {
     left: 100%;
   }
-}
+} */
 .container {
   position: relative;
   width: 100%;
@@ -231,12 +213,10 @@ html {
   cursor: pointer;
   box-shadow: inset 300px 0 0 0 #2a9d8f;
 }
-
 @media (max-width: 400px) {
   .projects {
     display: block;
   }
-
   .text-wrapper {
     display: block;
     height: 250px;
@@ -278,7 +258,6 @@ html {
 .card,
 #card {
   height: 300px;
-  /* width: 400px; */
   position: relative;
   transform-style: preserve-3d;
 }
@@ -296,7 +275,6 @@ html {
   transition: 2s ease-in-out;
   transform: perspective(400px) rotateY(0deg);
 }
-
 .card:hover .face.front {
   transform: perspective(400px) rotateY(180deg);
 }
@@ -313,7 +291,6 @@ html {
   text-transform: uppercase;
   transform: perspective(400px) translateZ(50px);
 }
-
 /* toggle*/
 .switch {
   position: relative;
@@ -321,13 +298,11 @@ html {
   width: 60px;
   height: 34px;
 }
-
 .switch input {
   opacity: 0;
   width: 0;
   height: 0;
 }
-
 .slider {
   position: absolute;
   cursor: pointer;
@@ -339,7 +314,6 @@ html {
   -webkit-transition: 0.4s;
   transition: 0.4s;
 }
-
 .slider:before {
   position: absolute;
   content: "";
@@ -351,26 +325,21 @@ html {
   -webkit-transition: 0.4s;
   transition: 0.4s;
 }
-
 input:checked + .slider {
   background-color: #2196f3;
 }
-
 input:focus + .slider {
   box-shadow: 0 0 1px #2196f3;
 }
-
 input:checked + .slider:before {
   -webkit-transform: translateX(26px);
   -ms-transform: translateX(26px);
   transform: translateX(26px);
 }
-
 /* Rounded sliders */
 .slider.round {
   border-radius: 34px;
 }
-
 .slider.round:before {
   border-radius: 50%;
 }
