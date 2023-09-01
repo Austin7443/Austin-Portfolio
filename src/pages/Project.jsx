@@ -8,7 +8,7 @@ export const Project = ({ color }) => {
 
   return (
     <>
-      <Box bg={"#000"} boxSizing={"border-box"} pt={["50px", "50px", "130px"]} px={[null, null, "20px", "40px"]}>
+      <Box bg={"#000"} boxSizing={"border-box"} pt={["70px", "70px", "130px"]} px={["30px", "30px", "30px", "40px"]}>
         <Text
           fontSize={["0.8rem", "0,8rem", "1rem"]}
           color={tertiary}
