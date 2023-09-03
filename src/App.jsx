@@ -3,7 +3,7 @@ import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import { Project } from "./pages/Project";
 import { Home } from "./pages/Home";
 import "./index.css";
-import Nav from "./components/NavE";
+import Nav from "./components/Nav";
 
 function App() {
   const color = {

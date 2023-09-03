@@ -10,7 +10,7 @@ import {
 } from "@chakra-ui/react";
 import { MdClear, MdMenu } from "react-icons/md";
 import { useEffect, useState } from "react";
-import "../App.css";
+// import "../App.css";
 import { FaSoundcloud } from "react-icons/fa";
 
 function Nav() {
@@ -30,7 +30,7 @@ function Nav() {
       direction={["column", "column", "row", "row"]}
       align={"center"}
       justifyContent={["space-between"]}
-      p={[null, null, "40px 20px", "15px 40px"]}
+      p={["40px 0px", "40px 20px", "40px 20px", "15px 40px"]}
       fontFamily={"Trenda-regular"}
     >
       <Flex w={["100%", "100%", "10%", "20%"]} align={["flex-start"]}>
@@ -68,7 +68,7 @@ function Nav() {
           direction={["column", "column", "row", "row"]}
           alignItems="center"
           justifyContent={"space-between"}
-          p={["50px 0 20px 0", "50px 0 20px 0", "10px 10px", "20px 80px"]}
+          p={[null, null, "10px 10px", "20px 80px"]}
           fontFamily={"Trenda-regular"}
           display={showMenu ? "flex" : "none"}
           color={"#808080"}
@@ -126,7 +126,7 @@ function Nav() {
         </Stack>
       </Box>
       <Box
-        position={"fixed"}
+        position={"absolute"}
         right={"20px"}
         top={"20px"}
         display={["block", "block", "none", "none"]}

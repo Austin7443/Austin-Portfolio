@@ -1,10 +1,12 @@
+/* eslint-disable react/prop-types */
+/* eslint-disable react/no-unescaped-entities */
 import { Box, Text, Stack, Button, Flex } from "@chakra-ui/react";
 import { Span } from "./Span";
 
 export const Intro = ({ marginLeft, color }) => {
   const { secondary } = color;
   return (
-    <Box position={"relative"} cursor="pointer" id="home" overflowX={"hidden"}>
+    <Box position={"relative"} cursor="pointer" id="home">
       <Box
         position={"absolute"}
         zIndex={10}

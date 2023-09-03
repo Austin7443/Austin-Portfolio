@@ -1,0 +1,103 @@
+/* Tools Animation */
+.text-wrapper {
+  border-radius: 50%;
+  animation: animate 7s linear infinite;
+}
+@keyframes animate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+/* Typing Animation */
+#me {
+  position: relative;
+}
+#me::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  height: 120px;
+  background: #000;
+  width: 100%;
+  border-left: 3px solid #2a9d8f;
+  animation: typing 4s steps(10) infinite;
+}
+@keyframes typing {
+  100% {
+    left: 460px;
+    margin: 0 -20px 0 35px;
+  }
+}
+@media (max-width: 600px) {
+  /* Typing Animation */
+  #me {
+    position: relative;
+  }
+  #me::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    height: 50px;
+    background: #000;
+    width: 100%;
+    border-left: 3px solid #2a9d8f;
+    animation: typing 4s steps(10) infinite;
+  }
+  @keyframes typing {
+    100% {
+      left: 150px;
+      margin: 0 -20px 0 35px;
+    }
+  }
+  #button:hover {
+    box-shadow: inset 400px 0 0 0 #2a9d8f;
+  }
+}
+/* #about {
+  position: relative;
+}
+#about::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  height: 100%;
+  background: #000;
+  width: 100%;
+  animation: bounce 3s steps(10) 1;
+  animation-fill-mode: forwards;
+} */
+/* @keyframes bounce {
+  100% {
+    left: 100%;
+  }
+} */
+/* #portfolio {
+  position: relative;
+}
+#portfolio::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  height: 100%;
+  background: #000;
+  width: 100%;
+  animation: moveRight 3s steps(10) 1;
+  animation-fill-mode: forwards;
+}
+@keyframes moveRight {
+  100% {
+    left: 100%;
+  }
+} */
+
+
+
+/* #dp {
+  transform: rotate(-9deg);
+  opacity: 70%;
+} */
+
+
