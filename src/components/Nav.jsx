@@ -93,18 +93,20 @@ function Nav() {
               Contact
             </a>
           </Text>
-          <Button
-            _hover={{ background: "#2A9D8F" }}
-            fontSize={".9em"}
-            bg={"transparent"}
-            border={"2px solid #2A9D8F"}
-            borderRadius={"none"}
-            color="#2A9D8F"
-            p="10px 30px"
-            display={["block", "block", "none", "none"]}
-          >
-            Resume
-          </Button>
+          <a href="https://austin-cv.netlify.app/">
+            <Button
+              _hover={{ background: "#2A9D8F" }}
+              fontSize={".9em"}
+              bg={"transparent"}
+              border={"2px solid #2A9D8F"}
+              borderRadius={"none"}
+              color="#2A9D8F"
+              p="10px 30px"
+              display={["block", "block", "none", "none"]}
+            >
+              Resume
+            </Button>
+          </a>
         </Stack>
       </Box>
       <Box>
