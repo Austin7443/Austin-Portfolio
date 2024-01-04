@@ -1,7 +1,7 @@
 /* eslint-disable react/prop-types */
 /* eslint-disable react/no-unescaped-entities */
 import { Box, Flex, HStack, Image, Text } from "@chakra-ui/react";
-import profile from "./images/pic.jpeg";
+import profile from "./images/pic.png";
 
 export const About = ({ color, marginLeft }) => {
   const { primary, secondary, tertiary } = color;
@@ -118,7 +118,7 @@ export const About = ({ color, marginLeft }) => {
           h={["350px", "400px", "400px", "400px"]}
           borderRadius={"100%"}
           className="reveal"
-          opacity={["90%"]}
+          // opacity={["90%"]}
           p={["20px", "0px", "0px"]}
           loading="lazy"
         />
