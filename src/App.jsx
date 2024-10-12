@@ -39,7 +39,7 @@ function App() {
           <Routes>
             <Route path="*" element={<Home />} />
             <Route index element={<Home />} />
-            <Route path="/project" element={<Project color={color} />} />
+            <Route path="/projects" element={<Project color={color} />} />
           </Routes>
           <Text
             fontSize={"1rem"}

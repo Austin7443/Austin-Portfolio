@@ -84,7 +84,7 @@ function Nav() {
             </a>
           </Text>
           <Text pr={["0px", "0px", "40px"]}>
-            <a href="/#projects" className="hova">
+            <a href="/projects" className="hova">
               Projects
             </a>
           </Text>

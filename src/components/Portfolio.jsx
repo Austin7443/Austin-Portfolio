@@ -93,8 +93,8 @@ export const Portfolio = ({ color, marginLeft }) => {
               <Text
                 as="span"
                 color={secondary}
-                onClick={() => navigate("/project")}
-                cursor={"pointer"}
+                onClick={() => navigate("/projects")}
+                cursor={"pointer !important"}
               >
                 {" "}
                 my work
@@ -123,7 +123,7 @@ export const Portfolio = ({ color, marginLeft }) => {
             size={"lg"}
             w={"250px"}
             onClick={() => {
-              navigate("/project");
+              navigate("/projects");
             }}
           >
             See more!
@@ -148,7 +148,7 @@ export const Portfolio = ({ color, marginLeft }) => {
           ]}
           w={"100%"}
           gap="1em"
-          className="reveal"
+          // className="reveal"
         >
           {data.map((data) => (
             <Box key={data?.id} className="all" cursor={"pointer"} w={"100%"}>

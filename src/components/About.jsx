@@ -73,6 +73,7 @@ export const About = ({ color, marginLeft }) => {
           color={tertiary}
           fontFamily={"Brush Script MT, Brush Script Std, cursive"}
           lineHeight={[0.7, 0.7, ""]}
+          pt={"5px"}
         >
           {"<p>"}
         </Text>
@@ -81,19 +82,20 @@ export const About = ({ color, marginLeft }) => {
           ml={["15px", "15px", marginLeft]}
           fontSize={["16px", "16px", "19px"]}
         >
-          I'm a seasoned frontend developer who have been passionate about the
-          web and building user-friendly product from the day I found out about
-          it using the latest development principles and techniques. <br />
+          I'm a seasoned frontend developer with a deep passion for the web and
+          creating user-friendly products using the latest development
+          principles and techniques. <br />
           <br />
-          For over a year now, I've had the opportunity to learn from and work
-          with other really cool developers which has led me horn my skill and
-          has kept pushing me to get to the peak of my career.
+          For over two years, I've had the privilege of learning from and
+          collaborating with talented developers, which has helped me hone my
+          skills and continuously push myself to reach new heights in my career.
           <br />
           <br />
-          I currently work as a frontend developer with Zealight innovation lab
-          in Lagos, Nigeria. where i work in close collaboration with both the
-          frontend team mates and other teams like the product design team,
-          backend team and marketing team to achieve user friendly products.
+          Currently, I work as a frontend developer at StoreHarmony
+          in Lagos, Nigeria, where I collaborate closely with cross-functional
+          teams, including frontend developers, product designers, backend
+          developers, and marketing professionals, to deliver user-friendly
+          products.
           <br />
           Want to know more about me and how I can help you?{" "}
           <Text as="span" color={secondary} cursor={"pointer"}>
