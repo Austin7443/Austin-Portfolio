@@ -12,7 +12,7 @@ export const Portfolio = ({ color, marginLeft }) => {
     <Box id="projects">
       <Box position={"relative"} className="reveal">
         <Flex
-          align={["center", "center", "flex-end"]}
+          align={["start", "center", "flex-end"]}
           direction={["column", "column", "row"]}
         >
           <Box w={"100%"}>
@@ -90,15 +90,12 @@ export const Portfolio = ({ color, marginLeft }) => {
               alone and others I built with some amazing developers. I'll keep
               updating as the list grows - I promise :). To get a clearer
               glimpse - visit{" "}
-              <Text
-                as="span"
-                color={secondary}
-                onClick={() => navigate("/projects")}
-                cursor={"pointer !important"}
-              >
-                {" "}
-                my work
-              </Text>{" "}
+              <a href="/projects">
+                <Text as="span" color={secondary} cursor="pointer">
+                  {" "}
+                  my work
+                </Text>{" "}
+              </a>
               page.
             </Text>
             <Text
@@ -109,13 +106,15 @@ export const Portfolio = ({ color, marginLeft }) => {
               {"</p>"}
             </Text>
           </Box>
+
           <Button
             id="button"
             aria-label="See more"
             fontSize={["15px", "16px", "19px"]}
             fontWeight={"light"}
-            display={"flex"}
-            justify={["center", null, null]}
+            // display={"flex"}
+            // justify={["center", null, null]}
+            ml={["15px", "15px", marginLeft]}
             color={secondary}
             border={"2px solid #2A9D8F"}
             borderRadius={"none"}
@@ -158,7 +157,7 @@ export const Portfolio = ({ color, marginLeft }) => {
                     src={data?.images}
                     alt={data?.alt}
                     h={"100%"}
-                    className="reveal"
+                    // className="reveal"
                     loading="lazy"
                   />
                 </Box>
@@ -181,10 +180,14 @@ export const Portfolio = ({ color, marginLeft }) => {
                     </Text>
                     <Box>
                       <HStack spacing={6}>
-                        <a href="https://github.com/Austin7443">
+                        <a
+                          href={data?.gitLink}
+                          rel="noreferrer"
+                          target="_blank"
+                        >
                           <FiGithub size={"1.5rem"} />
                         </a>
-                        <a href={data?.link}>
+                        <a href={data?.link} rel="noreferrer" target="_blank">
                           <FiExternalLink size={"1.5rem"} />
                         </a>
                       </HStack>

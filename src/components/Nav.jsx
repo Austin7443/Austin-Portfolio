@@ -95,7 +95,7 @@ function Nav() {
           </Text>
           <a href="https://austin-cv.netlify.app/">
             <Button
-              _hover={{ background: "#2A9D8F" }}
+              // _hover={{ background: "#2A9D8F" }}
               fontSize={".9em"}
               bg={"transparent"}
               border={"2px solid #2A9D8F"}
@@ -111,7 +111,11 @@ function Nav() {
       </Box>
       <Box>
         <Stack direction={"row"} alignItems="center">
-          <a href="https://austin-cv.netlify.app/">
+          <a
+            href="https://austin-cv.netlify.app/"
+            rel="noreferrer"
+            target="_blank"
+          >
             <Button
               id="button"
               fontSize={".9em"}
