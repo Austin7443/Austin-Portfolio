@@ -112,7 +112,8 @@ function Nav() {
       <Box>
         <Stack direction={"row"} alignItems="center">
           <a
-            href="https://austin-cv.netlify.app/"
+            href="Austin's Resume.pdf"
+            // download="Austin's Resume.pdf"
             rel="noreferrer"
             target="_blank"
           >
