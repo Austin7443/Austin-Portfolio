@@ -93,7 +93,7 @@ function Nav() {
               Contact
             </a>
           </Text>
-          <a href="https://austin-cv.netlify.app/">
+          <a href="Austin's Resume.pdf">
             <Button
               // _hover={{ background: "#2A9D8F" }}
               fontSize={".9em"}
