@@ -82,20 +82,17 @@ export const About = ({ color, marginLeft }) => {
           ml={["15px", "15px", marginLeft]}
           fontSize={["16px", "16px", "19px"]}
         >
-          I'm a seasoned frontend developer with a deep passion for the web and
-          creating user-friendly products using the latest development
-          principles and techniques. <br />
-          <br />
-          For over two years, I've had the privilege of learning from and
-          collaborating with talented developers, which has helped me hone my
-          skills and continuously push myself to reach new heights in my career.
+          I'm an experienced frontend developer with a passion for creating
+          intuitive, responsive web applications. Over the past 3+ years, I’ve
+          collaborated with talented developers and designers, continuously
+          sharpening my skills and staying up-to-date with modern frontend
+          practices. <br />
           <br />
           <br />
-          Currently, I work as a frontend developer at StoreHarmony
-          in Lagos, Nigeria, where I collaborate closely with cross-functional
-          teams, including frontend developers, product designers, backend
-          developers, and marketing professionals, to deliver user-friendly
-          products.
+          Currently, I work as a frontend developer at StoreHarmony in Lagos,
+          Nigeria, where I collaborate closely with cross-functional teams,
+          including frontend developers, product designers, backend developers,
+          and marketing professionals, to deliver user-friendly products.
           <br />
           Want to know more about me and how I can help you?{" "}
           <Text as="span" color={secondary} cursor={"pointer"}>
