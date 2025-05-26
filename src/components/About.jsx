@@ -86,13 +86,14 @@ export const About = ({ color, marginLeft }) => {
           intuitive, responsive web applications. Over the past 3+ years, I’ve
           collaborated with talented developers and designers, continuously
           sharpening my skills and staying up-to-date with modern frontend
-          practices. <br />
+          practices.
           <br />
           <br />
           Currently, I work as a frontend developer at StoreHarmony in Lagos,
           Nigeria, where I collaborate closely with cross-functional teams,
           including frontend developers, product designers, backend developers,
           and marketing professionals, to deliver user-friendly products.
+          <br />
           <br />
           Want to know more about me and how I can help you?{" "}
           <Text as="span" color={secondary} cursor={"pointer"}>
